@@ -1,0 +1,2512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prepositions Mastery · B1–B2 English Grammar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',
+            400:'#60a5fa',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',
+            800:'#1e40af',900:'#1e3a8a'
+          }
+        },
+        fontFamily: {
+          sans: ['Inter','system-ui','-apple-system','Segoe UI','Roboto','sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  .focus-ring:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; border-radius: 6px; }
+  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:1rem; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+  .badge { display:inline-flex; align-items:center; padding:.15rem .55rem; border-radius:9999px; font-size:.72rem; font-weight:600; letter-spacing:.02em; }
+  .badge-b1 { background:#dcfce7; color:#166534; }
+  .badge-b2 { background:#fef3c7; color:#92400e; }
+  .badge-module { background:#e0e7ff; color:#3730a3; }
+  .progress-track { background:#e5e7eb; border-radius:9999px; height:.55rem; overflow:hidden; }
+  .progress-fill { background:linear-gradient(90deg,#2563eb,#3b82f6); height:100%; transition:width .4s ease; }
+  .option-btn { transition: background .15s, border-color .15s, transform .05s; }
+  .option-btn:hover { background:#f8fafc; }
+  .option-btn:active { transform: scale(.995); }
+  .option-correct { background:#dcfce7 !important; border-color:#16a34a !important; }
+  .option-wrong { background:#fee2e2 !important; border-color:#dc2626 !important; }
+  .option-selected { border-color:#2563eb !important; background:#eff6ff !important; }
+  .fade-in { animation: fadeIn .25s ease; }
+  @keyframes fadeIn { from { opacity:0; transform: translateY(4px);} to {opacity:1; transform:none;} }
+  .nav-item.active { background:#eff6ff; color:#1d4ed8; font-weight:600; }
+  .dark body { background:#0f172a; color:#e2e8f0; }
+  .dark .card { background:#1e293b; border-color:#334155; }
+  .dark .nav-item.active { background:#1e3a8a; color:#bfdbfe; }
+  .dark .option-btn:hover { background:#334155; }
+  .dark .badge-module { background:#312e81; color:#c7d2fe; }
+  .dark .badge-b1 { background:#14532d; color:#bbf7d0; }
+  .dark .badge-b2 { background:#78350f; color:#fde68a; }
+  .dark .progress-track { background:#334155; }
+  .dark input, .dark select, .dark textarea { background:#0f172a; color:#e2e8f0; border-color:#334155; }
+  @media (max-width: 640px) {
+    .mobile-hide { display:none; }
+  }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+
+<!-- ============================= APP ROOT ============================= -->
+<div id="app" class="flex min-h-screen">
+
+  <!-- ===================== SIDEBAR (desktop) ===================== -->
+  <aside id="sidebar" class="hidden md:flex md:flex-col w-64 shrink-0 bg-white border-r border-slate-200 min-h-screen sticky top-0 h-screen overflow-y-auto">
+    <div class="p-5 border-b border-slate-100">
+      <h1 class="text-lg font-bold text-brand-700 flex items-center gap-2">
+        <span class="inline-flex w-8 h-8 rounded-lg bg-brand-600 text-white items-center justify-center font-bold">P</span>
+        Prepositions
+      </h1>
+      <p class="text-xs text-slate-500 mt-1">B1–B2 · Units 121–136</p>
+    </div>
+    <nav id="desktopNav" class="flex-1 p-3 space-y-1" aria-label="Main navigation"></nav>
+    <div class="p-4 border-t border-slate-100 text-xs text-slate-400">
+      <p>Progress saved locally.</p>
+      <p class="mt-1">© Grammar Learning</p>
+    </div>
+  </aside>
+
+  <!-- ===================== MAIN AREA ===================== -->
+  <div class="flex-1 min-w-0 flex flex-col">
+
+    <!-- Top bar -->
+    <header class="md:hidden sticky top-0 z-40 bg-white border-b border-slate-200 flex items-center justify-between px-4 py-3">
+      <button id="mobileMenuBtn" class="focus-ring p-2 rounded-lg hover:bg-slate-100" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <span class="font-bold text-brand-700">Prepositions Mastery</span>
+      <span class="w-10"></span>
+    </header>
+
+    <!-- Mobile drawer -->
+    <div id="mobileNavOverlay" class="fixed inset-0 z-50 hidden">
+      <div class="absolute inset-0 bg-black/40" data-close-nav></div>
+      <nav id="mobileNav" class="absolute top-0 left-0 w-72 max-w-[85%] h-full bg-white shadow-xl p-4 overflow-y-auto" aria-label="Mobile navigation">
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-bold text-brand-700">Menu</span>
+          <button class="focus-ring p-2 rounded-lg hover:bg-slate-100" data-close-nav aria-label="Close navigation menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div id="mobileNavList" class="space-y-1"></div>
+      </nav>
+    </div>
+
+    <!-- View container -->
+    <main id="view" class="flex-1 p-4 md:p-8 max-w-5xl w-full mx-auto" tabindex="-1"></main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white px-4 py-4 text-xs text-slate-500 text-center">
+      English Grammar Learning App · Prepositions · B1–B2 · Progress stored in your browser.
+    </footer>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="fixed bottom-4 right-4 z-[60] hidden">
+  <div class="bg-slate-900 text-white text-sm px-4 py-2.5 rounded-lg shadow-lg fade-in" id="toastMsg"></div>
+</div>
+
+<!-- Confirm modal -->
+<div id="confirmModal" class="fixed inset-0 z-[70] hidden items-center justify-center p-4">
+  <div class="absolute inset-0 bg-black/50" data-confirm-cancel></div>
+  <div class="relative bg-white rounded-2xl shadow-xl max-w-md w-full p-6 fade-in" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <h3 id="confirmTitle" class="text-lg font-bold mb-2">Are you sure?</h3>
+    <p id="confirmMsg" class="text-sm text-slate-600 mb-5">This action cannot be undone.</p>
+    <div class="flex gap-3 justify-end">
+      <button class="focus-ring px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-50 text-sm font-medium" data-confirm-cancel>Cancel</button>
+      <button id="confirmOk" class="focus-ring px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white text-sm font-semibold">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   PREPOSITIONS MASTERY — B1–B2 ENGLISH GRAMMAR APP
+   Single-file Vanilla JS SPA. No backend. localStorage progress.
+   ===================================================================== */
+
+/* ============================ 1. QUESTION BANK ============================ */
+
+const QUESTIONS = [
+  /* ---------- MODULE: Prepositions of Time ---------- */
+  // MCQ
+  {id:"t-mcq-001",module:"Time",unit:"121",level:"B1",type:"mcq",
+   question:"The lecture starts ___ 9:00.",
+   options:["in","on","at","by"],answer:"at",
+   explanation:"We use 'at' with a specific clock time.",
+   vietnameseExplanation:"Dùng 'at' với giờ cụ thể.",tags:["time","at","clock"]},
+  {id:"t-mcq-002",module:"Time",unit:"121",level:"B1",type:"mcq",
+   question:"My birthday is ___ 12 May.",
+   options:["in","on","at","by"],answer:"on",
+   explanation:"We use 'on' with dates and days.",
+   vietnameseExplanation:"Dùng 'on' với ngày và thứ.",tags:["time","on","date"]},
+  {id:"t-mcq-003",module:"Time",unit:"121",level:"B1",type:"mcq",
+   question:"We usually go on holiday ___ August.",
+   options:["in","on","at","by"],answer:"in",
+   explanation:"We use 'in' with months, years and seasons.",
+   vietnameseExplanation:"Dùng 'in' với tháng, năm, mùa.",tags:["time","in","month"]},
+  {id:"t-mcq-004",module:"Time",unit:"121",level:"B1",type:"mcq",
+   question:"I'll be there ___ about twenty minutes.",
+   options:["in","on","at","for"],answer:"in",
+   explanation:"'In' is used for a period of time in the future (how long from now).",
+   vietnameseExplanation:"'In' dùng cho khoảng thời gian trong tương lai.",tags:["time","in","future"]},
+  {id:"t-mcq-005",module:"Time",unit:"122",level:"B1",type:"mcq",
+   question:"I'll finish the report ___ Friday.",
+   options:["until","by","since","during"],answer:"by",
+   explanation:"'By' means 'not later than'. It marks a deadline.",
+   vietnameseExplanation:"'By' nghĩa là 'không muộn hơn' — hạn chót.",tags:["time","by","deadline"]},
+  {id:"t-mcq-006",module:"Time",unit:"122",level:"B1",type:"mcq",
+   question:"Wait here ___ I come back.",
+   options:["by","until","since","for"],answer:"until",
+   explanation:"'Until/till' means 'up to the time when'. It shows when an action stops.",
+   vietnameseExplanation:"'Until' nghĩa là 'cho đến khi'.",tags:["time","until","duration"]},
+  {id:"t-mcq-007",module:"Time",unit:"123",level:"B1",type:"mcq",
+   question:"I have lived in Hanoi ___ 2019.",
+   options:["for","since","from","during"],answer:"since",
+   explanation:"'Since' is used with a starting point in time.",
+   vietnameseExplanation:"'Since' dùng với mốc thời gian bắt đầu.",tags:["time","since"]},
+  {id:"t-mcq-008",module:"Time",unit:"123",level:"B1",type:"mcq",
+   question:"She has studied English ___ five years.",
+   options:["since","for","from","during"],answer:"for",
+   explanation:"'For' is used with a period of time.",
+   vietnameseExplanation:"'For' dùng với khoảng thời gian.",tags:["time","for"]},
+  {id:"t-mcq-009",module:"Time",unit:"124",level:"B1",type:"mcq",
+   question:"The film was boring, so I fell asleep ___ it.",
+   options:["during","for","since","until"],answer:"during",
+   explanation:"'During' means 'throughout a period or event'.",
+   vietnameseExplanation:"'During' nghĩa là 'trong suốt'.",tags:["time","during"]},
+  {id:"t-mcq-010",module:"Time",unit:"125",level:"B1",type:"mcq",
+   question:"The meeting started ___ time, at 10:00 sharp.",
+   options:["in","on","at","by"],answer:"on",
+   explanation:"'On time' means 'not late, at the planned time'.",
+   vietnameseExplanation:"'On time' nghĩa là đúng giờ.",tags:["time","on-time"]},
+  {id:"t-mcq-011",module:"Time",unit:"125",level:"B1",type:"mcq",
+   question:"We arrived just ___ time to catch the train.",
+   options:["on","in","at","by"],answer:"in",
+   explanation:"'In time' means 'early enough, before it is too late'.",
+   vietnameseExplanation:"'In time' nghĩa là kịp lúc.",tags:["time","in-time"]},
+  {id:"t-mcq-012",module:"Time",unit:"121",level:"B2",type:"mcq",
+   question:"The shop is closed ___ Sundays.",
+   options:["in","on","at","by"],answer:"on",
+   explanation:"We use 'on' with days of the week.",
+   vietnameseExplanation:"Dùng 'on' với các ngày trong tuần.",tags:["time","on","day"]},
+  {id:"t-mcq-013",module:"Time",unit:"121",level:"B2",type:"mcq",
+   question:"I'll see you ___ the weekend.",
+   options:["in","on","at","by"],answer:"at",
+   explanation:"British English uses 'at the weekend'; American English uses 'on the weekend'.",
+   vietnameseExplanation:"Anh-Anh dùng 'at the weekend', Anh-Mỹ dùng 'on the weekend'.",tags:["time","weekend","british"]},
+  {id:"t-mcq-014",module:"Time",unit:"122",level:"B2",type:"mcq",
+   question:"___ the time we arrived, the show had already started.",
+   options:["By","Until","Since","For"],answer:"By",
+   explanation:"'By the time' means 'before or when' something happened.",
+   vietnameseExplanation:"'By the time' nghĩa là 'vào lúc / trước khi'.",tags:["time","by-the-time"]},
+  {id:"t-mcq-015",module:"Time",unit:"124",level:"B2",type:"mcq",
+   question:"___ my stay in London, I visited many museums.",
+   options:["During","For","Since","Until"],answer:"During",
+   explanation:"'During' is used with a noun (an event or period).",
+   vietnameseExplanation:"'During' + danh từ chỉ sự kiện/khoảng thời gian.",tags:["time","during"]},
+  // Fill-in
+  {id:"t-fib-001",module:"Time",unit:"121",level:"B1",type:"fill",
+   question:"The class begins ___ 8:30.",answer:["at"],
+   explanation:"'At' is used with clock times.",
+   vietnameseExplanation:"'At' dùng với giờ cụ thể.",tags:["time","at"]},
+  {id:"t-fib-002",module:"Time",unit:"121",level:"B1",type:"fill",
+   question:"We met ___ a cold morning in January.",answer:["on"],
+   explanation:"We use 'on' with parts of the day when they are described.",
+   vietnameseExplanation:"Dùng 'on' với buổi được mô tả.",tags:["time","on"]},
+  {id:"t-fib-003",module:"Time",unit:"121",level:"B1",type:"fill",
+   question:"He was born ___ 1998.",answer:["in"],
+   explanation:"'In' is used with years.",
+   vietnameseExplanation:"'In' dùng với năm.",tags:["time","in"]},
+  {id:"t-fib-004",module:"Time",unit:"122",level:"B1",type:"fill",
+   question:"Please send the file ___ Friday at the latest.",answer:["by"],
+   explanation:"'By' marks a deadline.",
+   vietnameseExplanation:"'By' chỉ hạn chót.",tags:["time","by"]},
+  {id:"t-fib-005",module:"Time",unit:"123",level:"B1",type:"fill",
+   question:"I've known her ___ 2015.",answer:["since"],
+   explanation:"'Since' + starting point.",
+   vietnameseExplanation:"'Since' + mốc bắt đầu.",tags:["time","since"]},
+  {id:"t-fib-006",module:"Time",unit:"123",level:"B1",type:"fill",
+   question:"They have been married ___ ten years.",answer:["for"],
+   explanation:"'For' + period of time.",
+   vietnameseExplanation:"'For' + khoảng thời gian.",tags:["time","for"]},
+  {id:"t-fib-007",module:"Time",unit:"124",level:"B1",type:"fill",
+   question:"___ the meeting, please turn off your phone.",answer:["During"],
+   explanation:"'During' + noun (event).",
+   vietnameseExplanation:"'During' + danh từ.",tags:["time","during"]},
+  {id:"t-fib-008",module:"Time",unit:"125",level:"B1",type:"fill",
+   question:"The train left ___ time, at exactly 6:00.",answer:["on"],
+   explanation:"'On time' = at the planned time.",
+   vietnameseExplanation:"'On time' = đúng giờ.",tags:["time","on-time"]},
+  // Choose
+  {id:"t-ch-001",module:"Time",unit:"122",level:"B1",type:"choose",
+   question:"I waited (until / by) 10 p.m., but he didn't come.",
+   options:["until","by"],answer:"until",
+   explanation:"'Until' shows when the action stopped.",
+   vietnameseExplanation:"'Until' chỉ khi hành động kết thúc.",tags:["time","until"]},
+  {id:"t-ch-002",module:"Time",unit:"123",level:"B1",type:"choose",
+   question:"She has worked here (since / for) 2020.",
+   options:["since","for"],answer:"since",
+   explanation:"'Since' + starting point (2020).",
+   vietnameseExplanation:"'Since' + mốc bắt đầu.",tags:["time","since"]},
+  {id:"t-ch-003",module:"Time",unit:"121",level:"B1",type:"choose",
+   question:"We'll meet (in / on) Monday morning.",
+   options:["in","on"],answer:"on",
+   explanation:"'On' + day + part of day.",
+   vietnameseExplanation:"'On' + ngày + buổi.",tags:["time","on"]},
+  // Error correction
+  {id:"t-err-001",module:"Time",unit:"123",level:"B1",type:"error",
+   question:"I have lived here for 2018.",
+   options:["I have lived here since 2018.","I have lived here from 2018.","I have lived here during 2018.","I have lived here at 2018."],
+   answer:"I have lived here since 2018.",
+   explanation:"Use 'since' with a starting point, 'for' with a period.",
+   vietnameseExplanation:"Dùng 'since' với mốc, 'for' với khoảng.",tags:["time","since","for"]},
+  {id:"t-err-002",module:"Time",unit:"122",level:"B1",type:"error",
+   question:"I'll finish it until Friday.",
+   options:["I'll finish it by Friday.","I'll finish it since Friday.","I'll finish it for Friday.","I'll finish it during Friday."],
+   answer:"I'll finish it by Friday.",
+   explanation:"'By' means 'not later than'; 'until' shows when something stops.",
+   vietnameseExplanation:"'By' = không muộn hơn; 'until' = cho đến khi.",tags:["time","by","until"]},
+  // Matching
+  {id:"t-mat-001",module:"Time",unit:"121",level:"B1",type:"match",
+   question:"Match the time preposition with its use.",
+   pairs:[["at","clock time"],["on","days and dates"],["in","months, years, seasons"]],
+   explanation:"At → clock time; on → days/dates; in → months/years/seasons.",
+   vietnameseExplanation:"At → giờ; on → ngày; in → tháng/năm/mùa.",tags:["time","at","on","in"]},
+  {id:"t-mat-002",module:"Time",unit:"123",level:"B1",type:"match",
+   question:"Match 'for' and 'since' with their meanings.",
+   pairs:[["for","a period of time"],["since","a starting point"]],
+   explanation:"For → period; since → starting point.",
+   vietnameseExplanation:"For → khoảng; since → mốc.",tags:["time","for","since"]},
+  // Transformation
+  {id:"t-tr-001",module:"Time",unit:"123",level:"B2",type:"transform",
+   question:"Rewrite using 'since': I last saw him in 2020.",
+   answer:["I haven't seen him since 2020."],
+   explanation:"'Since' + starting point with present perfect.",
+   vietnameseExplanation:"'Since' + mốc + thì hiện tại hoàn thành.",tags:["time","since"]},
+  {id:"t-tr-002",module:"Time",unit:"122",level:"B2",type:"transform",
+   question:"Rewrite using 'by': Finish the work no later than 5 p.m.",
+   answer:["Finish the work by 5 p.m."],
+   explanation:"'By' expresses a deadline.",
+   vietnameseExplanation:"'By' chỉ hạn chót.",tags:["time","by"]},
+  // Translation
+  {id:"t-tl-001",module:"Time",unit:"123",level:"B1",type:"translation",
+   question:"Translate into English: Tôi đã sống ở đây từ năm 2019.",
+   answer:["I have lived here since 2019."],
+   explanation:"'Since' + starting point.",
+   vietnameseExplanation:"'Since' + mốc bắt đầu.",tags:["time","since"]},
+  {id:"t-tl-002",module:"Time",unit:"122",level:"B1",type:"translation",
+   question:"Translate into English: Tôi sẽ hoàn thành nó trước thứ Sáu.",
+   answer:["I will finish it by Friday.","I'll finish it by Friday."],
+   explanation:"'By' = deadline.",
+   vietnameseExplanation:"'By' = hạn chót.",tags:["time","by"]},
+
+  /* ---------- MODULE: Position and Movement ---------- */
+  {id:"p-mcq-001",module:"Place",unit:"126",level:"B1",type:"mcq",
+   question:"I'll meet you ___ the bus stop.",
+   options:["at","in","on","by"],answer:"at",
+   explanation:"'At' is used for a point or meeting place.",
+   vietnameseExplanation:"'At' dùng cho điểm hẹn.",tags:["place","at"]},
+  {id:"p-mcq-002",module:"Place",unit:"126",level:"B1",type:"mcq",
+   question:"She lives ___ a small flat in the city centre.",
+   options:["at","in","on","by"],answer:"in",
+   explanation:"'In' is used for enclosed spaces and cities.",
+   vietnameseExplanation:"'In' dùng cho không gian kín, thành phố.",tags:["place","in"]},
+  {id:"p-mcq-003",module:"Place",unit:"126",level:"B1",type:"mcq",
+   question:"The book is ___ the table.",
+   options:["at","in","on","by"],answer:"on",
+   explanation:"'On' is used for surfaces.",
+   vietnameseExplanation:"'On' dùng cho bề mặt.",tags:["place","on"]},
+  {id:"p-mcq-004",module:"Place",unit:"127",level:"B1",type:"mcq",
+   question:"He walked ___ the room and sat down.",
+   options:["in","into","on","onto"],answer:"into",
+   explanation:"'Into' shows movement towards the inside of a place.",
+   vietnameseExplanation:"'Into' chỉ chuyển động vào trong.",tags:["movement","into"]},
+  {id:"p-mcq-005",module:"Place",unit:"127",level:"B1",type:"mcq",
+   question:"The cat jumped ___ the table.",
+   options:["on","onto","in","into"],answer:"onto",
+   explanation:"'Onto' shows movement to a surface.",
+   vietnameseExplanation:"'Onto' chỉ chuyển động lên bề mặt.",tags:["movement","onto"]},
+  {id:"p-mcq-006",module:"Place",unit:"128",level:"B1",type:"mcq",
+   question:"We drove ___ the tunnel.",
+   options:["across","through","along","over"],answer:"through",
+   explanation:"'Through' means going in one side and out the other.",
+   vietnameseExplanation:"'Through' = xuyên qua.",tags:["movement","through"]},
+  {id:"p-mcq-007",module:"Place",unit:"128",level:"B1",type:"mcq",
+   question:"We walked ___ the river for an hour.",
+   options:["across","through","along","over"],answer:"along",
+   explanation:"'Along' means following the length of something.",
+   vietnameseExplanation:"'Along' = dọc theo.",tags:["movement","along"]},
+  {id:"p-mcq-008",module:"Place",unit:"128",level:"B1",type:"mcq",
+   question:"The plane flew ___ the mountains.",
+   options:["over","under","above","below"],answer:"over",
+   explanation:"'Over' means above and across.",
+   vietnameseExplanation:"'Over' = phía trên và ngang qua.",tags:["movement","over"]},
+  {id:"p-mcq-009",module:"Place",unit:"128",level:"B1",type:"mcq",
+   question:"The ball rolled ___ the bed.",
+   options:["under","below","beneath","underneath"],answer:"under",
+   explanation:"'Under' = directly below.",
+   vietnameseExplanation:"'Under' = ở dưới.",tags:["movement","under"]},
+  {id:"p-mcq-010",module:"Place",unit:"128",level:"B2",type:"mcq",
+   question:"The shop is ___ the bank and the post office.",
+   options:["among","between","through","across"],answer:"between",
+   explanation:"'Between' is used for two things.",
+   vietnameseExplanation:"'Between' dùng cho hai vật.",tags:["place","between"]},
+  {id:"p-mcq-011",module:"Place",unit:"128",level:"B2",type:"mcq",
+   question:"She felt nervous ___ so many strangers.",
+   options:["between","among","through","across"],answer:"among",
+   explanation:"'Among' is used for more than two things/people.",
+   vietnameseExplanation:"'Among' dùng cho nhiều hơn hai.",tags:["place","among"]},
+  {id:"p-mcq-012",module:"Place",unit:"126",level:"B2",type:"mcq",
+   question:"He is ___ home today.",
+   options:["at","in","on","by"],answer:"at",
+   explanation:"'At home' is a fixed expression.",
+   vietnameseExplanation:"'At home' là cụm cố định.",tags:["place","at-home"]},
+  {id:"p-mcq-013",module:"Place",unit:"126",level:"B2",type:"mcq",
+   question:"She is ___ work at the moment.",
+   options:["at","in","on","by"],answer:"at",
+   explanation:"'At work' is a fixed expression.",
+   vietnameseExplanation:"'At work' là cụm cố định.",tags:["place","at-work"]},
+  {id:"p-mcq-014",module:"Place",unit:"128",level:"B2",type:"mcq",
+   question:"The temperature is ___ zero today.",
+   options:["under","below","beneath","down"],answer:"below",
+   explanation:"'Below' is used for levels and measurements.",
+   vietnameseExplanation:"'Below' dùng cho mức độ.",tags:["place","below"]},
+  {id:"p-mcq-015",module:"Place",unit:"128",level:"B2",type:"mcq",
+   question:"We walked ___ the bridge to the other side.",
+   options:["through","across","along","over"],answer:"across",
+   explanation:"'Across' means from one side to the other.",
+   vietnameseExplanation:"'Across' = từ bên này sang bên kia.",tags:["movement","across"]},
+  // Fill
+  {id:"p-fib-001",module:"Place",unit:"126",level:"B1",type:"fill",
+   question:"I live ___ Ho Chi Minh City.",answer:["in"],
+   explanation:"'In' + city/country.",
+   vietnameseExplanation:"'In' + thành phố/quốc gia.",tags:["place","in"]},
+  {id:"p-fib-002",module:"Place",unit:"126",level:"B1",type:"fill",
+   question:"The keys are ___ the table.",answer:["on"],
+   explanation:"'On' + surface.",
+   vietnameseExplanation:"'On' + bề mặt.",tags:["place","on"]},
+  {id:"p-fib-003",module:"Place",unit:"127",level:"B1",type:"fill",
+   question:"She walked ___ the room and closed the door.",answer:["into"],
+   explanation:"'Into' = movement inside.",
+   vietnameseExplanation:"'Into' = chuyển động vào trong.",tags:["movement","into"]},
+  {id:"p-fib-004",module:"Place",unit:"128",level:"B1",type:"fill",
+   question:"We drove ___ the tunnel.",answer:["through"],
+   explanation:"'Through' = in one side, out the other.",
+   vietnameseExplanation:"'Through' = xuyên qua.",tags:["movement","through"]},
+  {id:"p-fib-005",module:"Place",unit:"128",level:"B1",type:"fill",
+   question:"We walked ___ the beach.",answer:["along"],
+   explanation:"'Along' = following the length.",
+   vietnameseExplanation:"'Along' = dọc theo.",tags:["movement","along"]},
+  {id:"p-fib-006",module:"Place",unit:"128",level:"B2",type:"fill",
+   question:"The cat is hiding ___ the sofa.",answer:["under"],
+   explanation:"'Under' = below something.",
+   vietnameseExplanation:"'Under' = ở dưới.",tags:["place","under"]},
+  {id:"p-fib-007",module:"Place",unit:"128",level:"B2",type:"fill",
+   question:"The bank is ___ the supermarket and the cinema.",answer:["between"],
+   explanation:"'Between' = two things.",
+   vietnameseExplanation:"'Between' = giữa hai vật.",tags:["place","between"]},
+  // Choose
+  {id:"p-ch-001",module:"Place",unit:"127",level:"B1",type:"choose",
+   question:"She got (in / into) the car and drove away.",
+   options:["in","into"],answer:"into",
+   explanation:"'Into' shows movement; 'in' shows position.",
+   vietnameseExplanation:"'Into' chỉ chuyển động; 'in' chỉ vị trí.",tags:["movement","into"]},
+  {id:"p-ch-002",module:"Place",unit:"126",level:"B1",type:"choose",
+   question:"He is (at / in) the station waiting for us.",
+   options:["at","in"],answer:"at",
+   explanation:"'At' for a meeting point.",
+   vietnameseExplanation:"'At' cho điểm hẹn.",tags:["place","at"]},
+  {id:"p-ch-003",module:"Place",unit:"128",level:"B1",type:"choose",
+   question:"We swam (across / through) the river.",
+   options:["across","through"],answer:"across",
+   explanation:"'Across' = from one side to the other on a surface.",
+   vietnameseExplanation:"'Across' = băng qua.",tags:["movement","across"]},
+  // Error
+  {id:"p-err-001",module:"Place",unit:"127",level:"B1",type:"error",
+   question:"He walked in the room.",
+   options:["He walked into the room.","He walked on the room.","He walked at the room.","He walked onto the room."],
+   answer:"He walked into the room.",
+   explanation:"Use 'into' for movement into a space.",
+   vietnameseExplanation:"Dùng 'into' cho chuyển động vào trong.",tags:["movement","into"]},
+  {id:"p-err-002",module:"Place",unit:"126",level:"B1",type:"error",
+   question:"I am in home.",
+   options:["I am at home.","I am on home.","I am by home.","I am into home."],
+   answer:"I am at home.",
+   explanation:"'At home' is the correct fixed expression.",
+   vietnameseExplanation:"'At home' là cụm đúng.",tags:["place","at-home"]},
+  // Match
+  {id:"p-mat-001",module:"Place",unit:"126",level:"B1",type:"match",
+   question:"Match the preposition with its use.",
+   pairs:[["at","a point / meeting place"],["in","enclosed space / city"],["on","a surface"]],
+   explanation:"At → point; in → enclosed; on → surface.",
+   vietnameseExplanation:"At → điểm; in → không gian kín; on → bề mặt.",tags:["place","at","in","on"]},
+  {id:"p-mat-002",module:"Place",unit:"128",level:"B2",type:"match",
+   question:"Match the movement preposition with its meaning.",
+   pairs:[["through","in one side, out the other"],["across","from one side to the other"],["along","following the length"]],
+   explanation:"Through → xuyên qua; across → băng qua; along → dọc theo.",
+   vietnameseExplanation:"Through → xuyên qua; across → băng qua; along → dọc theo.",tags:["movement"]},
+  // Transform
+  {id:"p-tr-001",module:"Place",unit:"127",level:"B2",type:"transform",
+   question:"Rewrite with 'into': He went in the house.",
+   answer:["He went into the house."],
+   explanation:"'Into' shows movement inside.",
+   vietnameseExplanation:"'Into' chỉ chuyển động vào trong.",tags:["movement","into"]},
+  {id:"p-tr-002",module:"Place",unit:"128",level:"B2",type:"transform",
+   question:"Rewrite with 'across': They walked to the other side of the road.",
+   answer:["They walked across the road."],
+   explanation:"'Across' = from one side to the other.",
+   vietnameseExplanation:"'Across' = băng qua.",tags:["movement","across"]},
+  // Translation
+  {id:"p-tl-001",module:"Place",unit:"128",level:"B1",type:"translation",
+   question:"Translate: Con mèo nhảy lên bàn.",
+   answer:["The cat jumped onto the table."],
+   explanation:"'Onto' for movement to a surface.",
+   vietnameseExplanation:"'Onto' cho chuyển động lên bề mặt.",tags:["movement","onto"]},
+  {id:"p-tl-002",module:"Place",unit:"128",level:"B1",type:"translation",
+   question:"Translate: Chúng tôi đi bộ dọc bờ sông.",
+   answer:["We walked along the river."],
+   explanation:"'Along' = following the length.",
+   vietnameseExplanation:"'Along' = dọc theo.",tags:["movement","along"]},
+
+  /* ---------- MODULE: Other Uses ---------- */
+  {id:"o-mcq-001",module:"Other",unit:"121",level:"B1",type:"mcq",
+   question:"I usually go to work ___ bus.",
+   options:["by","on","in","with"],answer:"by",
+   explanation:"'By' + means of transport (by bus, by car).",
+   vietnameseExplanation:"'By' + phương tiện.",tags:["other","by-transport"]},
+  {id:"o-mcq-002",module:"Other",unit:"121",level:"B1",type:"mcq",
+   question:"She goes to school ___ foot.",
+   options:["by","on","in","at"],answer:"on",
+   explanation:"'On foot' is the fixed expression.",
+   vietnameseExplanation:"'On foot' là cụm cố định.",tags:["other","on-foot"]},
+  {id:"o-mcq-003",module:"Other",unit:"121",level:"B1",type:"mcq",
+   question:"This novel was written ___ Nguyen Du.",
+   options:["by","from","with","of"],answer:"by",
+   explanation:"Passive voice uses 'by' for the agent.",
+   vietnameseExplanation:"Câu bị động dùng 'by' cho tác nhân.",tags:["other","passive"]},
+  {id:"o-mcq-004",module:"Other",unit:"121",level:"B2",type:"mcq",
+   question:"He is interested ___ learning languages.",
+   options:["on","in","at","for"],answer:"in",
+   explanation:"'Interested in' + noun/-ing.",
+   vietnameseExplanation:"'Interested in' + danh từ/V-ing.",tags:["other","adjective"]},
+  {id:"o-mcq-005",module:"Other",unit:"121",level:"B2",type:"mcq",
+   question:"She is good ___ maths.",
+   options:["at","in","on","for"],answer:"at",
+   explanation:"'Good at' + noun/-ing.",
+   vietnameseExplanation:"'Good at' + danh từ/V-ing.",tags:["other","adjective"]},
+  {id:"o-mcq-006",module:"Other",unit:"121",level:"B2",type:"mcq",
+   question:"I'm looking forward ___ seeing you.",
+   options:["to","for","at","on"],answer:"to",
+   explanation:"'Look forward to' + -ing.",
+   vietnameseExplanation:"'Look forward to' + V-ing.",tags:["other","verb"]},
+  {id:"o-mcq-007",module:"Other",unit:"121",level:"B2",type:"mcq",
+   question:"He is afraid ___ spiders.",
+   options:["of","from","with","about"],answer:"of",
+   explanation:"'Afraid of' + noun/-ing.",
+   vietnameseExplanation:"'Afraid of' + danh từ/V-ing.",tags:["other","adjective"]},
+  {id:"o-mcq-008",module:"Other",unit:"121",level:"B2",type:"mcq",
+   question:"She is married ___ a doctor.",
+   options:["with","to","for","by"],answer:"to",
+   explanation:"'Married to' somebody.",
+   vietnameseExplanation:"'Married to' + người.",tags:["other","adjective"]},
+  {id:"o-mcq-009",module:"Other",unit:"121",level:"B2",type:"mcq",
+   question:"We arrived ___ the airport at 6 a.m.",
+   options:["in","at","on","to"],answer:"at",
+   explanation:"'Arrive at' + a building/point; 'arrive in' + a city/country.",
+   vietnameseExplanation:"'Arrive at' + địa điểm; 'arrive in' + thành phố/quốc gia.",tags:["other","arrive"]},
+  {id:"o-mcq-010",module:"Other",unit:"121",level:"B2",type:"mcq",
+   question:"They arrived ___ Paris yesterday.",
+   options:["at","in","on","to"],answer:"in",
+   explanation:"'Arrive in' + city/country.",
+   vietnameseExplanation:"'Arrive in' + thành phố/quốc gia.",tags:["other","arrive"]},
+  // Fill
+  {id:"o-fib-001",module:"Other",unit:"121",level:"B1",type:"fill",
+   question:"I go to school ___ bike.",answer:["by"],
+   explanation:"'By' + transport.",
+   vietnameseExplanation:"'By' + phương tiện.",tags:["other","by-transport"]},
+  {id:"o-fib-002",module:"Other",unit:"121",level:"B1",type:"fill",
+   question:"This song was written ___ Taylor Swift.",answer:["by"],
+   explanation:"Passive voice + 'by'.",
+   vietnameseExplanation:"Bị động + 'by'.",tags:["other","passive"]},
+  {id:"o-fib-003",module:"Other",unit:"121",level:"B2",type:"fill",
+   question:"She is very good ___ cooking.",answer:["at"],
+   explanation:"'Good at' + -ing.",
+   vietnameseExplanation:"'Good at' + V-ing.",tags:["other","adjective"]},
+  {id:"o-fib-004",module:"Other",unit:"121",level:"B2",type:"fill",
+   question:"I'm interested ___ art.",answer:["in"],
+   explanation:"'Interested in' + noun.",
+   vietnameseExplanation:"'Interested in' + danh từ.",tags:["other","adjective"]},
+  {id:"o-fib-005",module:"Other",unit:"121",level:"B2",type:"fill",
+   question:"He is afraid ___ dogs.",answer:["of"],
+   explanation:"'Afraid of' + noun.",
+   vietnameseExplanation:"'Afraid of' + danh từ.",tags:["other","adjective"]},
+  // Choose
+  {id:"o-ch-001",module:"Other",unit:"121",level:"B1",type:"choose",
+   question:"We travelled (by / on) train.",
+   options:["by","on"],answer:"by",
+   explanation:"'By train' is the standard phrase.",
+   vietnameseExplanation:"'By train' là cụm chuẩn.",tags:["other","by-transport"]},
+  {id:"o-ch-002",module:"Other",unit:"121",level:"B1",type:"choose",
+   question:"She is married (with / to) a teacher.",
+   options:["with","to"],answer:"to",
+   explanation:"'Married to' somebody.",
+   vietnameseExplanation:"'Married to' + người.",tags:["other","adjective"]},
+  // Error
+  {id:"o-err-001",module:"Other",unit:"121",level:"B1",type:"error",
+   question:"I am interested on music.",
+   options:["I am interested in music.","I am interested at music.","I am interested for music.","I am interested with music."],
+   answer:"I am interested in music.",
+   explanation:"'Interested in' is the correct collocation.",
+   vietnameseExplanation:"'Interested in' là cụm đúng.",tags:["other","adjective"]},
+  {id:"o-err-002",module:"Other",unit:"121",level:"B1",type:"error",
+   question:"She is good in English.",
+   options:["She is good at English.","She is good on English.","She is good for English.","She is good with English."],
+   answer:"She is good at English.",
+   explanation:"'Good at' + subject.",
+   vietnameseExplanation:"'Good at' + môn học.",tags:["other","adjective"]},
+  // Match
+  {id:"o-mat-001",module:"Other",unit:"121",level:"B1",type:"match",
+   question:"Match the adjective with its preposition.",
+   pairs:[["interested","in"],["good","at"],["afraid","of"]],
+   explanation:"Interested in; good at; afraid of.",
+   vietnameseExplanation:"Interested in; good at; afraid of.",tags:["other","adjective"]},
+  {id:"o-mat-002",module:"Other",unit:"121",level:"B2",type:"match",
+   question:"Match the verb with its preposition.",
+   pairs:[["look forward","to"],["apologise","for"],["depend","on"]],
+   explanation:"Look forward to; apologise for; depend on.",
+   vietnameseExplanation:"Look forward to; apologise for; depend on.",tags:["other","verb"]},
+  // Transform
+  {id:"o-tr-001",module:"Other",unit:"121",level:"B2",type:"transform",
+   question:"Rewrite in passive: Someone wrote this book in 1990.",
+   answer:["This book was written in 1990."],
+   explanation:"Passive uses 'by' + agent, or no agent.",
+   vietnameseExplanation:"Bị động dùng 'by' + tác nhân.",tags:["other","passive"]},
+  {id:"o-tr-002",module:"Other",unit:"121",level:"B2",type:"transform",
+   question:"Rewrite using 'by': We travel to work using bus.",
+   answer:["We travel to work by bus."],
+   explanation:"'By' + transport.",
+   vietnameseExplanation:"'By' + phương tiện.",tags:["other","by-transport"]},
+  // Translation
+  {id:"o-tl-001",module:"Other",unit:"121",level:"B1",type:"translation",
+   question:"Translate: Tôi thích học tiếng Anh.",
+   answer:["I am interested in learning English.","I like learning English."],
+   explanation:"'Interested in' + -ing.",
+   vietnameseExplanation:"'Interested in' + V-ing.",tags:["other","adjective"]},
+  {id:"o-tl-002",module:"Other",unit:"121",level:"B1",type:"translation",
+   question:"Translate: Cô ấy giỏi toán.",
+   answer:["She is good at maths."],
+   explanation:"'Good at' + subject.",
+   vietnameseExplanation:"'Good at' + môn học.",tags:["other","adjective"]},
+
+  /* ---------- MODULE: Noun + Preposition ---------- */
+  {id:"n-mcq-001",module:"Noun",unit:"129",level:"B1",type:"mcq",
+   question:"There is an increase ___ the number of students.",
+   options:["of","in","on","for"],answer:"in",
+   explanation:"'An increase in' something.",
+   vietnameseExplanation:"'An increase in' + danh từ.",tags:["noun","increase"]},
+  {id:"n-mcq-002",module:"Noun",unit:"129",level:"B1",type:"mcq",
+   question:"The reason ___ his absence is unknown.",
+   options:["of","for","on","in"],answer:"for",
+   explanation:"'The reason for' something.",
+   vietnameseExplanation:"'The reason for' + danh từ.",tags:["noun","reason"]},
+  {id:"n-mcq-003",module:"Noun",unit:"129",level:"B1",type:"mcq",
+   question:"We need a solution ___ this problem.",
+   options:["of","to","for","on"],answer:"to",
+   explanation:"'A solution to' a problem.",
+   vietnameseExplanation:"'A solution to' + vấn đề.",tags:["noun","solution"]},
+  {id:"n-mcq-004",module:"Noun",unit:"129",level:"B1",type:"mcq",
+   question:"She has good knowledge ___ the subject.",
+   options:["of","in","on","about"],answer:"of",
+   explanation:"'Knowledge of' a subject.",
+   vietnameseExplanation:"'Knowledge of' + chủ đề.",tags:["noun","knowledge"]},
+  {id:"n-mcq-005",module:"Noun",unit:"129",level:"B2",type:"mcq",
+   question:"There is a high demand ___ skilled workers.",
+   options:["of","for","on","in"],answer:"for",
+   explanation:"'Demand for' something.",
+   vietnameseExplanation:"'Demand for' + danh từ.",tags:["noun","demand"]},
+  {id:"n-mcq-006",module:"Noun",unit:"129",level:"B2",type:"mcq",
+   question:"His influence ___ the team was enormous.",
+   options:["of","on","in","for"],answer:"on",
+   explanation:"'Influence on' somebody/something.",
+   vietnameseExplanation:"'Influence on' + ai/việc gì.",tags:["noun","influence"]},
+  {id:"n-mcq-007",module:"Noun",unit:"129",level:"B2",type:"mcq",
+   question:"Her attitude ___ work has changed.",
+   options:["of","to","for","on"],answer:"to",
+   explanation:"'Attitude to/towards' something.",
+   vietnameseExplanation:"'Attitude to/towards' + việc gì.",tags:["noun","attitude"]},
+  {id:"n-mcq-008",module:"Noun",unit:"129",level:"B2",type:"mcq",
+   question:"I need more information ___ the course.",
+   options:["of","about","on","for"],answer:"about",
+   explanation:"'Information about' something.",
+   vietnameseExplanation:"'Information about' + việc gì.",tags:["noun","information"]},
+  {id:"n-mcq-009",module:"Noun",unit:"129",level:"B2",type:"mcq",
+   question:"He has experience ___ teaching.",
+   options:["of","in","on","for"],answer:"in",
+   explanation:"'Experience in' a field/activity.",
+   vietnameseExplanation:"'Experience in' + lĩnh vực.",tags:["noun","experience"]},
+  {id:"n-mcq-010",module:"Noun",unit:"129",level:"B2",type:"mcq",
+   question:"There is a connection ___ diet and health.",
+   options:["of","between","among","in"],answer:"between",
+   explanation:"'A connection between' two things.",
+   vietnameseExplanation:"'A connection between' hai vật.",tags:["noun","connection"]},
+  // Fill
+  {id:"n-fib-001",module:"Noun",unit:"129",level:"B1",type:"fill",
+   question:"The reason ___ the delay was bad weather.",answer:["for"],
+   explanation:"'Reason for' + noun.",
+   vietnameseExplanation:"'Reason for' + danh từ.",tags:["noun","reason"]},
+  {id:"n-fib-002",module:"Noun",unit:"129",level:"B1",type:"fill",
+   question:"There has been an increase ___ sales.",answer:["in"],
+   explanation:"'Increase in' + noun.",
+   vietnameseExplanation:"'Increase in' + danh từ.",tags:["noun","increase"]},
+  {id:"n-fib-003",module:"Noun",unit:"129",level:"B2",type:"fill",
+   question:"We need a solution ___ this issue.",answer:["to"],
+   explanation:"'Solution to' + noun.",
+   vietnameseExplanation:"'Solution to' + danh từ.",tags:["noun","solution"]},
+  {id:"n-fib-004",module:"Noun",unit:"129",level:"B2",type:"fill",
+   question:"She has knowledge ___ the market.",answer:["of"],
+   explanation:"'Knowledge of' + noun.",
+   vietnameseExplanation:"'Knowledge of' + danh từ.",tags:["noun","knowledge"]},
+  // Choose
+  {id:"n-ch-001",module:"Noun",unit:"129",level:"B1",type:"choose",
+   question:"The demand (for / of) organic food is rising.",
+   options:["for","of"],answer:"for",
+   explanation:"'Demand for' + noun.",
+   vietnameseExplanation:"'Demand for' + danh từ.",tags:["noun","demand"]},
+  {id:"n-ch-002",module:"Noun",unit:"129",level:"B1",type:"choose",
+   question:"His attitude (to / of) work is positive.",
+   options:["to","of"],answer:"to",
+   explanation:"'Attitude to/towards' + noun.",
+   vietnameseExplanation:"'Attitude to/towards' + danh từ.",tags:["noun","attitude"]},
+  // Error
+  {id:"n-err-001",module:"Noun",unit:"129",level:"B1",type:"error",
+   question:"The reason of his failure is unknown.",
+   options:["The reason for his failure is unknown.","The reason on his failure is unknown.","The reason in his failure is unknown.","The reason about his failure is unknown."],
+   answer:"The reason for his failure is unknown.",
+   explanation:"'Reason for' + noun.",
+   vietnameseExplanation:"'Reason for' + danh từ.",tags:["noun","reason"]},
+  {id:"n-err-002",module:"Noun",unit:"129",level:"B1",type:"error",
+   question:"There is an increase of pollution.",
+   options:["There is an increase in pollution.","There is an increase on pollution.","There is an increase for pollution.","There is an increase at pollution."],
+   answer:"There is an increase in pollution.",
+   explanation:"'Increase in' + noun.",
+   vietnameseExplanation:"'Increase in' + danh từ.",tags:["noun","increase"]},
+  // Match
+  {id:"n-mat-001",module:"Noun",unit:"129",level:"B1",type:"match",
+   question:"Match the noun with its preposition.",
+   pairs:[["reason","for"],["increase","in"],["solution","to"]],
+   explanation:"Reason for; increase in; solution to.",
+   vietnameseExplanation:"Reason for; increase in; solution to.",tags:["noun"]},
+  {id:"n-mat-002",module:"Noun",unit:"129",level:"B2",type:"match",
+   question:"Match the noun with its preposition.",
+   pairs:[["knowledge","of"],["demand","for"],["influence","on"]],
+   explanation:"Knowledge of; demand for; influence on.",
+   vietnameseExplanation:"Knowledge of; demand for; influence on.",tags:["noun"]},
+  // Transform
+  {id:"n-tr-001",module:"Noun",unit:"129",level:"B2",type:"transform",
+   question:"Rewrite using 'solution': We need to solve this problem.",
+   answer:["We need a solution to this problem."],
+   explanation:"'Solution to' + noun.",
+   vietnameseExplanation:"'Solution to' + danh từ.",tags:["noun","solution"]},
+  {id:"n-tr-002",module:"Noun",unit:"129",level:"B2",type:"transform",
+   question:"Rewrite using 'reason': Why did he leave? What was the reason?",
+   answer:["What was the reason for his leaving?","What was the reason for his departure?"],
+   explanation:"'Reason for' + noun/-ing.",
+   vietnameseExplanation:"'Reason for' + danh từ/V-ing.",tags:["noun","reason"]},
+  // Translation
+  {id:"n-tl-001",module:"Noun",unit:"129",level:"B1",type:"translation",
+   question:"Translate: Lý do cho sự vắng mặt của anh ấy là gì?",
+   answer:["What is the reason for his absence?"],
+   explanation:"'Reason for' + noun.",
+   vietnameseExplanation:"'Reason for' + danh từ.",tags:["noun","reason"]},
+  {id:"n-tl-002",module:"Noun",unit:"129",level:"B1",type:"translation",
+   question:"Translate: Cần có giải pháp cho vấn đề này.",
+   answer:["We need a solution to this problem."],
+   explanation:"'Solution to' + noun.",
+   vietnameseExplanation:"'Solution to' + danh từ.",tags:["noun","solution"]},
+
+  /* ---------- MODULE: Adjective + Preposition ---------- */
+  {id:"a-mcq-001",module:"Adjective",unit:"130",level:"B1",type:"mcq",
+   question:"She is afraid ___ the dark.",
+   options:["of","from","with","about"],answer:"of",
+   explanation:"'Afraid of' + noun/-ing.",
+   vietnameseExplanation:"'Afraid of' + danh từ/V-ing.",tags:["adjective","afraid"]},
+  {id:"a-mcq-002",module:"Adjective",unit:"130",level:"B1",type:"mcq",
+   question:"He is responsible ___ the project.",
+   options:["of","for","on","with"],answer:"for",
+   explanation:"'Responsible for' + noun/-ing.",
+   vietnameseExplanation:"'Responsible for' + danh từ/V-ing.",tags:["adjective","responsible"]},
+  {id:"a-mcq-003",module:"Adjective",unit:"130",level:"B1",type:"mcq",
+   question:"She is capable ___ doing the job.",
+   options:["of","for","to","in"],answer:"of",
+   explanation:"'Capable of' + -ing.",
+   vietnameseExplanation:"'Capable of' + V-ing.",tags:["adjective","capable"]},
+  {id:"a-mcq-004",module:"Adjective",unit:"130",level:"B1",type:"mcq",
+   question:"Are you familiar ___ this software?",
+   options:["of","with","to","about"],answer:"with",
+   explanation:"'Familiar with' + noun.",
+   vietnameseExplanation:"'Familiar with' + danh từ.",tags:["adjective","familiar"]},
+  {id:"a-mcq-005",module:"Adjective",unit:"130",level:"B1",type:"mcq",
+   question:"We are proud ___ your achievements.",
+   options:["of","for","with","about"],answer:"of",
+   explanation:"'Proud of' + noun.",
+   vietnameseExplanation:"'Proud of' + danh từ.",tags:["adjective","proud"]},
+  {id:"a-mcq-006",module:"Adjective",unit:"130",level:"B2",type:"mcq",
+   question:"She is worried ___ the exam.",
+   options:["of","about","for","with"],answer:"about",
+   explanation:"'Worried about' + noun/-ing.",
+   vietnameseExplanation:"'Worried about' + danh từ/V-ing.",tags:["adjective","worried"]},
+  {id:"a-mcq-007",module:"Adjective",unit:"130",level:"B2",type:"mcq",
+   question:"He is married ___ my cousin.",
+   options:["with","to","for","by"],answer:"to",
+   explanation:"'Married to' somebody.",
+   vietnameseExplanation:"'Married to' + người.",tags:["adjective","married"]},
+  {id:"a-mcq-008",module:"Adjective",unit:"131",level:"B2",type:"mcq",
+   question:"Your bag is similar ___ mine.",
+   options:["with","to","as","like"],answer:"to",
+   explanation:"'Similar to' + noun.",
+   vietnameseExplanation:"'Similar to' + danh từ.",tags:["adjective","similar"]},
+  {id:"a-mcq-009",module:"Adjective",unit:"131",level:"B2",type:"mcq",
+   question:"She is keen ___ playing tennis.",
+   options:["on","in","at","for"],answer:"on",
+   explanation:"'Keen on' + noun/-ing.",
+   vietnameseExplanation:"'Keen on' + danh từ/V-ing.",tags:["adjective","keen"]},
+  {id:"a-mcq-010",module:"Adjective",unit:"131",level:"B2",type:"mcq",
+   question:"I am satisfied ___ your work.",
+   options:["of","with","for","about"],answer:"with",
+   explanation:"'Satisfied with' + noun.",
+   vietnameseExplanation:"'Satisfied with' + danh từ.",tags:["adjective","satisfied"]},
+  // Fill
+  {id:"a-fib-001",module:"Adjective",unit:"130",level:"B1",type:"fill",
+   question:"She is afraid ___ flying.",answer:["of"],
+   explanation:"'Afraid of' + -ing.",
+   vietnameseExplanation:"'Afraid of' + V-ing.",tags:["adjective","afraid"]},
+  {id:"a-fib-002",module:"Adjective",unit:"130",level:"B1",type:"fill",
+   question:"He is responsible ___ the team.",answer:["for"],
+   explanation:"'Responsible for' + noun.",
+   vietnameseExplanation:"'Responsible for' + danh từ.",tags:["adjective","responsible"]},
+  {id:"a-fib-003",module:"Adjective",unit:"131",level:"B2",type:"fill",
+   question:"I'm not familiar ___ this system.",answer:["with"],
+   explanation:"'Familiar with' + noun.",
+   vietnameseExplanation:"'Familiar with' + danh từ.",tags:["adjective","familiar"]},
+  {id:"a-fib-004",module:"Adjective",unit:"131",level:"B2",type:"fill",
+   question:"She is proud ___ her son.",answer:["of"],
+   explanation:"'Proud of' + noun.",
+   vietnameseExplanation:"'Proud of' + danh từ.",tags:["adjective","proud"]},
+  // Choose
+  {id:"a-ch-001",module:"Adjective",unit:"130",level:"B1",type:"choose",
+   question:"I'm worried (about / of) the results.",
+   options:["about","of"],answer:"about",
+   explanation:"'Worried about' + noun.",
+   vietnameseExplanation:"'Worried about' + danh từ.",tags:["adjective","worried"]},
+  {id:"a-ch-002",module:"Adjective",unit:"130",level:"B1",type:"choose",
+   question:"She is capable (of / to) doing it.",
+   options:["of","to"],answer:"of",
+   explanation:"'Capable of' + -ing.",
+   vietnameseExplanation:"'Capable of' + V-ing.",tags:["adjective","capable"]},
+  // Error
+  {id:"a-err-001",module:"Adjective",unit:"130",level:"B1",type:"error",
+   question:"She is afraid from dogs.",
+   options:["She is afraid of dogs.","She is afraid with dogs.","She is afraid about dogs.","She is afraid to dogs."],
+   answer:"She is afraid of dogs.",
+   explanation:"'Afraid of' + noun.",
+   vietnameseExplanation:"'Afraid of' + danh từ.",tags:["adjective","afraid"]},
+  {id:"a-err-002",module:"Adjective",unit:"130",level:"B1",type:"error",
+   question:"He is responsible of the project.",
+   options:["He is responsible for the project.","He is responsible on the project.","He is responsible with the project.","He is responsible at the project."],
+   answer:"He is responsible for the project.",
+   explanation:"'Responsible for' + noun.",
+   vietnameseExplanation:"'Responsible for' + danh từ.",tags:["adjective","responsible"]},
+  // Match
+  {id:"a-mat-001",module:"Adjective",unit:"130",level:"B1",type:"match",
+   question:"Match the adjective with its preposition.",
+   pairs:[["afraid","of"],["responsible","for"],["capable","of"]],
+   explanation:"Afraid of; responsible for; capable of.",
+   vietnameseExplanation:"Afraid of; responsible for; capable of.",tags:["adjective"]},
+  {id:"a-mat-002",module:"Adjective",unit:"131",level:"B2",type:"match",
+   question:"Match the adjective with its preposition.",
+   pairs:[["familiar","with"],["proud","of"],["worried","about"]],
+   explanation:"Familiar with; proud of; worried about.",
+   vietnameseExplanation:"Familiar with; proud of; worried about.",tags:["adjective"]},
+  // Transform
+  {id:"a-tr-001",module:"Adjective",unit:"130",level:"B2",type:"transform",
+   question:"Rewrite using 'proud': Your achievements make me feel proud.",
+   answer:["I am proud of your achievements."],
+   explanation:"'Proud of' + noun.",
+   vietnameseExplanation:"'Proud of' + danh từ.",tags:["adjective","proud"]},
+  {id:"a-tr-002",module:"Adjective",unit:"131",level:"B2",type:"transform",
+   question:"Rewrite using 'similar': My phone and your phone are alike.",
+   answer:["My phone is similar to your phone."],
+   explanation:"'Similar to' + noun.",
+   vietnameseExplanation:"'Similar to' + danh từ.",tags:["adjective","similar"]},
+  // Translation
+  {id:"a-tl-001",module:"Adjective",unit:"130",level:"B1",type:"translation",
+   question:"Translate: Tôi tự hào về bạn.",
+   answer:["I am proud of you."],
+   explanation:"'Proud of' + pronoun.",
+   vietnameseExplanation:"'Proud of' + đại từ.",tags:["adjective","proud"]},
+  {id:"a-tl-002",module:"Adjective",unit:"130",level:"B1",type:"translation",
+   question:"Translate: Cô ấy lo lắng về kỳ thi.",
+   answer:["She is worried about the exam."],
+   explanation:"'Worried about' + noun.",
+   vietnameseExplanation:"'Worried about' + danh từ.",tags:["adjective","worried"]},
+
+  /* ---------- MODULE: Verb + Preposition ---------- */
+  {id:"v-mcq-001",module:"Verb",unit:"132",level:"B1",type:"mcq",
+   question:"Please listen ___ me carefully.",
+   options:["to","at","for","on"],answer:"to",
+   explanation:"'Listen to' somebody/something.",
+   vietnameseExplanation:"'Listen to' + ai/việc gì.",tags:["verb","listen"]},
+  {id:"v-mcq-002",module:"Verb",unit:"132",level:"B1",type:"mcq",
+   question:"It depends ___ the weather.",
+   options:["of","on","in","for"],answer:"on",
+   explanation:"'Depend on' somebody/something.",
+   vietnameseExplanation:"'Depend on' + ai/việc gì.",tags:["verb","depend"]},
+  {id:"v-mcq-003",module:"Verb",unit:"132",level:"B1",type:"mcq",
+   question:"I'm waiting ___ the bus.",
+   options:["on","for","at","to"],answer:"for",
+   explanation:"'Wait for' somebody/something.",
+   vietnameseExplanation:"'Wait for' + ai/việc gì.",tags:["verb","wait"]},
+  {id:"v-mcq-004",module:"Verb",unit:"133",level:"B1",type:"mcq",
+   question:"She apologised ___ being late.",
+   options:["for","to","about","of"],answer:"for",
+   explanation:"'Apologise for' something.",
+   vietnameseExplanation:"'Apologise for' + việc gì.",tags:["verb","apologise"]},
+  {id:"v-mcq-005",module:"Verb",unit:"133",level:"B2",type:"mcq",
+   question:"I agree ___ you on this point.",
+   options:["to","with","for","on"],answer:"with",
+   explanation:"'Agree with' somebody.",
+   vietnameseExplanation:"'Agree with' + người.",tags:["verb","agree"]},
+  {id:"v-mcq-006",module:"Verb",unit:"133",level:"B2",type:"mcq",
+   question:"They agreed ___ the proposal.",
+   options:["with","to","for","on"],answer:"to",
+   explanation:"'Agree to' a proposal/suggestion.",
+   vietnameseExplanation:"'Agree to' + đề xuất.",tags:["verb","agree"]},
+  {id:"v-mcq-007",module:"Verb",unit:"134",level:"B2",type:"mcq",
+   question:"He suffers ___ asthma.",
+   options:["of","from","with","for"],answer:"from",
+   explanation:"'Suffer from' an illness.",
+   vietnameseExplanation:"'Suffer from' + bệnh.",tags:["verb","suffer"]},
+  {id:"v-mcq-008",module:"Verb",unit:"134",level:"B2",type:"mcq",
+   question:"Please concentrate ___ your work.",
+   options:["in","on","at","for"],answer:"on",
+   explanation:"'Concentrate on' something.",
+   vietnameseExplanation:"'Concentrate on' + việc gì.",tags:["verb","concentrate"]},
+  {id:"v-mcq-009",module:"Verb",unit:"135",level:"B2",type:"mcq",
+   question:"She applied ___ a job at the bank.",
+   options:["to","for","on","in"],answer:"for",
+   explanation:"'Apply for' a job.",
+   vietnameseExplanation:"'Apply for' + công việc.",tags:["verb","apply"]},
+  {id:"v-mcq-010",module:"Verb",unit:"135",level:"B2",type:"mcq",
+   question:"He applied ___ the university.",
+   options:["for","to","on","at"],answer:"to",
+   explanation:"'Apply to' an organisation/university.",
+   vietnameseExplanation:"'Apply to' + tổ chức/trường.",tags:["verb","apply"]},
+  {id:"v-mcq-011",module:"Verb",unit:"136",level:"B2",type:"mcq",
+   question:"I'm looking ___ my keys.",
+   options:["for","after","at","on"],answer:"for",
+   explanation:"'Look for' = try to find.",
+   vietnameseExplanation:"'Look for' = tìm kiếm.",tags:["verb","look"]},
+  {id:"v-mcq-012",module:"Verb",unit:"136",level:"B2",type:"mcq",
+   question:"She looks ___ her elderly mother.",
+   options:["for","after","at","on"],answer:"after",
+   explanation:"'Look after' = take care of.",
+   vietnameseExplanation:"'Look after' = chăm sóc.",tags:["verb","look"]},
+  {id:"v-mcq-013",module:"Verb",unit:"136",level:"B2",type:"mcq",
+   question:"They complained ___ the noise.",
+   options:["to","about","for","of"],answer:"about",
+   explanation:"'Complain about' something.",
+   vietnameseExplanation:"'Complain about' + việc gì.",tags:["verb","complain"]},
+  {id:"v-mcq-014",module:"Verb",unit:"136",level:"B2",type:"mcq",
+   question:"I complained ___ the manager.",
+   options:["about","to","for","with"],answer:"to",
+   explanation:"'Complain to' somebody.",
+   vietnameseExplanation:"'Complain to' + người.",tags:["verb","complain"]},
+  {id:"v-mcq-015",module:"Verb",unit:"132",level:"B1",type:"mcq",
+   question:"I don't agree ___ your opinion.",
+   options:["with","to","for","on"],answer:"with",
+   explanation:"'Agree with' an opinion/person.",
+   vietnameseExplanation:"'Agree with' + ý kiến/người.",tags:["verb","agree"]},
+  // Fill
+  {id:"v-fib-001",module:"Verb",unit:"132",level:"B1",type:"fill",
+   question:"Please listen ___ me.",answer:["to"],
+   explanation:"'Listen to' + object.",
+   vietnameseExplanation:"'Listen to' + tân ngữ.",tags:["verb","listen"]},
+  {id:"v-fib-002",module:"Verb",unit:"132",level:"B1",type:"fill",
+   question:"It depends ___ you.",answer:["on"],
+   explanation:"'Depend on' + object.",
+   vietnameseExplanation:"'Depend on' + tân ngữ.",tags:["verb","depend"]},
+  {id:"v-fib-003",module:"Verb",unit:"132",level:"B1",type:"fill",
+   question:"I'm waiting ___ the train.",answer:["for"],
+   explanation:"'Wait for' + object.",
+   vietnameseExplanation:"'Wait for' + tân ngữ.",tags:["verb","wait"]},
+  {id:"v-fib-004",module:"Verb",unit:"133",level:"B1",type:"fill",
+   question:"He apologised ___ the mistake.",answer:["for"],
+   explanation:"'Apologise for' + noun.",
+   vietnameseExplanation:"'Apologise for' + danh từ.",tags:["verb","apologise"]},
+  {id:"v-fib-005",module:"Verb",unit:"134",level:"B2",type:"fill",
+   question:"She suffers ___ headaches.",answer:["from"],
+   explanation:"'Suffer from' + illness.",
+   vietnameseExplanation:"'Suffer from' + bệnh.",tags:["verb","suffer"]},
+  {id:"v-fib-006",module:"Verb",unit:"134",level:"B2",type:"fill",
+   question:"Concentrate ___ your studies.",answer:["on"],
+   explanation:"'Concentrate on' + noun.",
+   vietnameseExplanation:"'Concentrate on' + danh từ.",tags:["verb","concentrate"]},
+  {id:"v-fib-007",module:"Verb",unit:"135",level:"B2",type:"fill",
+   question:"She applied ___ a scholarship.",answer:["for"],
+   explanation:"'Apply for' + noun.",
+   vietnameseExplanation:"'Apply for' + danh từ.",tags:["verb","apply"]},
+  {id:"v-fib-008",module:"Verb",unit:"136",level:"B2",type:"fill",
+   question:"Look ___ the baby while I'm out.",answer:["after"],
+   explanation:"'Look after' = take care.",
+   vietnameseExplanation:"'Look after' = chăm sóc.",tags:["verb","look"]},
+  // Choose
+  {id:"v-ch-001",module:"Verb",unit:"133",level:"B1",type:"choose",
+   question:"I agree (with / to) you.",
+   options:["with","to"],answer:"with",
+   explanation:"'Agree with' a person.",
+   vietnameseExplanation:"'Agree with' + người.",tags:["verb","agree"]},
+  {id:"v-ch-002",module:"Verb",unit:"133",level:"B1",type:"choose",
+   question:"They agreed (with / to) the plan.",
+   options:["with","to"],answer:"to",
+   explanation:"'Agree to' a plan/proposal.",
+   vietnameseExplanation:"'Agree to' + kế hoạch.",tags:["verb","agree"]},
+  {id:"v-ch-003",module:"Verb",unit:"135",level:"B1",type:"choose",
+   question:"She applied (for / to) the job.",
+   options:["for","to"],answer:"for",
+   explanation:"'Apply for' a job.",
+   vietnameseExplanation:"'Apply for' + công việc.",tags:["verb","apply"]},
+  // Error
+  {id:"v-err-001",module:"Verb",unit:"132",level:"B1",type:"error",
+   question:"Please listen me.",
+   options:["Please listen to me.","Please listen at me.","Please listen for me.","Please listen on me."],
+   answer:"Please listen to me.",
+   explanation:"'Listen to' requires 'to'.",
+   vietnameseExplanation:"'Listen to' cần 'to'.",tags:["verb","listen"]},
+  {id:"v-err-002",module:"Verb",unit:"133",level:"B1",type:"error",
+   question:"I agree to you.",
+   options:["I agree with you.","I agree on you.","I agree for you.","I agree at you."],
+   answer:"I agree with you.",
+   explanation:"'Agree with' a person.",
+   vietnameseExplanation:"'Agree with' + người.",tags:["verb","agree"]},
+  {id:"v-err-003",module:"Verb",unit:"135",level:"B1",type:"error",
+   question:"He applied to a job.",
+   options:["He applied for a job.","He applied on a job.","He applied at a job.","He applied in a job."],
+   answer:"He applied for a job.",
+   explanation:"'Apply for' a job.",
+   vietnameseExplanation:"'Apply for' + công việc.",tags:["verb","apply"]},
+  // Match
+  {id:"v-mat-001",module:"Verb",unit:"132",level:"B1",type:"match",
+   question:"Match the verb with its preposition.",
+   pairs:[["listen","to"],["depend","on"],["wait","for"]],
+   explanation:"Listen to; depend on; wait for.",
+   vietnameseExplanation:"Listen to; depend on; wait for.",tags:["verb"]},
+  {id:"v-mat-002",module:"Verb",unit:"136",level:"B2",type:"match",
+   question:"Match the verb with its meaning.",
+   pairs:[["look for","try to find"],["look after","take care of"],["complain about","express dissatisfaction"]],
+   explanation:"Look for = find; look after = care; complain about = dissatisfaction.",
+   vietnameseExplanation:"Look for = tìm; look after = chăm sóc; complain about = phàn nàn.",tags:["verb"]},
+  // Transform
+  {id:"v-tr-001",module:"Verb",unit:"132",level:"B2",type:"transform",
+   question:"Rewrite using 'depend': The result is determined by the weather.",
+   answer:["The result depends on the weather."],
+   explanation:"'Depend on' + noun.",
+   vietnameseExplanation:"'Depend on' + danh từ.",tags:["verb","depend"]},
+  {id:"v-tr-002",module:"Verb",unit:"136",level:"B2",type:"transform",
+   question:"Rewrite using 'look after': She takes care of her brother.",
+   answer:["She looks after her brother."],
+   explanation:"'Look after' = take care of.",
+   vietnameseExplanation:"'Look after' = chăm sóc.",tags:["verb","look"]},
+  // Translation
+  {id:"v-tl-001",module:"Verb",unit:"132",level:"B1",type:"translation",
+   question:"Translate: Tôi đang chờ bạn.",
+   answer:["I am waiting for you."],
+   explanation:"'Wait for' + pronoun.",
+   vietnameseExplanation:"'Wait for' + đại từ.",tags:["verb","wait"]},
+  {id:"v-tl-002",module:"Verb",unit:"132",level:"B1",type:"translation",
+   question:"Translate: Nó phụ thuộc vào bạn.",
+   answer:["It depends on you."],
+   explanation:"'Depend on' + pronoun.",
+   vietnameseExplanation:"'Depend on' + đại từ.",tags:["verb","depend"]},
+
+  /* ---------- CONTEXTUAL EXERCISES ---------- */
+  {id:"ctx-001",module:"Mixed",unit:"121-136",level:"B1",type:"context",
+   question:"Dear Professor, I am writing to apologise ___ my absence. I was ill ___ Monday. I am now ___ home and will return ___ work ___ Friday. Best regards, Minh",
+   answer:["for,on,at,to,by"],
+   explanation:"Apologise for; on Monday; at home; return to work; by Friday.",
+   vietnameseExplanation:"Apologise for; on Monday; at home; return to work; by Friday.",tags:["context","mixed"]},
+  {id:"ctx-002",module:"Mixed",unit:"121-136",level:"B2",type:"context",
+   question:"I am interested ___ applying ___ the internship. I have experience ___ teamwork and I am good ___ communication. I am also familiar ___ the company's values. I look forward ___ hearing from you.",
+   answer:["in,for,in,at,with,to"],
+   explanation:"Interested in; apply for; experience in; good at; familiar with; look forward to.",
+   vietnameseExplanation:"Interested in; apply for; experience in; good at; familiar with; look forward to.",tags:["context","mixed"]},
+  {id:"ctx-003",module:"Mixed",unit:"121-136",level:"B2",type:"context",
+   question:"The increase ___ online learning has had an influence ___ students' attitudes ___ study. Many are now more responsible ___ their own progress. However, some still depend ___ teachers for guidance.",
+   answer:["in,on,to,for,on"],
+   explanation:"Increase in; influence on; attitude to; responsible for; depend on.",
+   vietnameseExplanation:"Increase in; influence on; attitude to; responsible for; depend on.",tags:["context","mixed"]},
+  {id:"ctx-004",module:"Mixed",unit:"121-136",level:"B1",type:"context",
+   question:"Last summer I travelled ___ bus ___ Hanoi ___ Da Nang. We left ___ 6 a.m. and arrived ___ Da Nang ___ 10 p.m. The trip was wonderful.",
+   answer:["by,from,to,at,in,at"],
+   explanation:"By bus; from…to; at 6 a.m.; in Da Nang; at 10 p.m.",
+   vietnameseExplanation:"By bus; from…to; at 6 a.m.; in Da Nang; at 10 p.m.",tags:["context","mixed"]},
+  {id:"ctx-005",module:"Mixed",unit:"121-136",level:"B2",type:"context",
+   question:"She is married ___ a doctor. They have been together ___ 2015. She is proud ___ him and he is proud ___ her. They are very satisfied ___ their life.",
+   answer:["to,since,of,of,with"],
+   explanation:"Married to; since 2015; proud of; proud of; satisfied with.",
+   vietnameseExplanation:"Married to; since 2015; proud of; proud of; satisfied with.",tags:["context","mixed"]}
+];
+
+/* ============================ 2. LESSONS DATA ============================ */
+const LESSONS = [
+  {
+    id:"lesson-time", title:"Prepositions of Time", module:"Time", icon:"🕐",
+    units:"121–125",
+    objectives:[
+      "Use at, on, in correctly with clock times, days, dates, months and years.",
+      "Distinguish by and until/till.",
+      "Use for and since correctly with present perfect.",
+      "Use during, in time and on time accurately."
+    ],
+    content:[
+      {heading:"At, on, in", body:
+        "<p><strong>at</strong> + clock time: <em>at 7 o'clock, at noon, at midnight, at lunchtime</em>.</p>"+
+        "<p><strong>on</strong> + days and dates: <em>on Monday, on 5 May, on my birthday</em>.</p>"+
+        "<p><strong>in</strong> + months, years, seasons, parts of the day: <em>in July, in 2020, in winter, in the morning</em>.</p>"+
+        "<p><em>Vietnamese:</em> 'at' dùng với giờ; 'on' dùng với ngày/thứ; 'in' dùng với tháng/năm/mùa/buổi.</p>",
+        examples:[
+          {en:"The meeting starts at 9:00.", vi:"Cuộc họp bắt đầu lúc 9:00.", note:"'at' + clock time."},
+          {en:"We have class on Monday.", vi:"Chúng tôi có lớp vào thứ Hai.", note:"'on' + day."},
+          {en:"She was born in 1999.", vi:"Cô ấy sinh năm 1999.", note:"'in' + year."}
+        ]},
+      {heading:"By vs until/till", body:
+        "<p><strong>by</strong> = not later than (deadline): <em>I'll finish it by Friday.</em></p>"+
+        "<p><strong>until/till</strong> = up to the time when something stops: <em>Wait here until I come back.</em></p>"+
+        "<p><em>Vietnamese:</em> 'by' = trước/không muộn hơn; 'until' = cho đến khi.</p>",
+        examples:[
+          {en:"Please submit the report by 5 p.m.", vi:"Vui lòng nộp báo cáo trước 5 giờ chiều.", note:"'by' = deadline."},
+          {en:"I waited until 10 p.m.", vi:"Tôi đã đợi đến 10 giờ tối.", note:"'until' = when the action stopped."}
+        ]},
+      {heading:"For vs since", body:
+        "<p><strong>for</strong> + period of time: <em>for two years, for a long time</em>.</p>"+
+        "<p><strong>since</strong> + starting point: <em>since 2020, since Monday, since I was a child</em>.</p>"+
+        "<p><em>Vietnamese:</em> 'for' + khoảng thời gian; 'since' + mốc thời gian bắt đầu.</p>",
+        examples:[
+          {en:"I have lived here for five years.", vi:"Tôi đã sống ở đây được năm năm.", note:"'for' + period."},
+          {en:"I have lived here since 2019.", vi:"Tôi đã sống ở đây từ năm 2019.", note:"'since' + starting point."}
+        ]},
+      {heading:"During, in time, on time", body:
+        "<p><strong>during</strong> + noun (event/period): <em>during the meeting, during the summer</em>.</p>"+
+        "<p><strong>in time</strong> = early enough: <em>We arrived in time to catch the train.</em></p>"+
+        "<p><strong>on time</strong> = at the planned time, not late: <em>The train left on time.</em></p>"+
+        "<p><em>Vietnamese:</em> 'during' = trong suốt; 'in time' = kịp lúc; 'on time' = đúng giờ.</p>",
+        examples:[
+          {en:"Please turn off your phone during the lesson.", vi:"Vui lòng tắt điện thoại trong suốt bài học.", note:"'during' + noun."},
+          {en:"We arrived in time for the show.", vi:"Chúng tôi đến kịp buổi diễn.", note:"'in time' = early enough."},
+          {en:"She always arrives on time.", vi:"Cô ấy luôn đến đúng giờ.", note:"'on time' = not late."}
+        ]}
+    ]
+  },
+  {
+    id:"lesson-place", title:"Prepositions of Position and Movement", module:"Place", icon:"📍",
+    units:"126–128",
+    objectives:[
+      "Use at, in, on correctly for place.",
+      "Distinguish in/into and on/onto.",
+      "Use across, through, along, around, over, under, above, below.",
+      "Use between and among correctly."
+    ],
+    content:[
+      {heading:"At, in, on for place", body:
+        "<p><strong>at</strong> + point/meeting place: <em>at the bus stop, at home, at work</em>.</p>"+
+        "<p><strong>in</strong> + enclosed space/city/country: <em>in the room, in Hanoi, in Vietnam</em>.</p>"+
+        "<p><strong>on</strong> + surface: <em>on the table, on the wall, on the floor</em>.</p>"+
+        "<p><em>Vietnamese:</em> 'at' = điểm; 'in' = không gian kín; 'on' = bề mặt.</p>",
+        examples:[
+          {en:"I'll meet you at the station.", vi:"Tôi sẽ gặp bạn ở nhà ga.", note:"'at' = meeting point."},
+          {en:"She lives in a small flat.", vi:"Cô ấy sống trong một căn hộ nhỏ.", note:"'in' = enclosed space."},
+          {en:"The book is on the desk.", vi:"Cuốn sách ở trên bàn.", note:"'on' = surface."}
+        ]},
+      {heading:"In/into and on/onto", body:
+        "<p><strong>in</strong> = position inside; <strong>into</strong> = movement towards inside.</p>"+
+        "<p><strong>on</strong> = position on a surface; <strong>onto</strong> = movement to a surface.</p>"+
+        "<p><em>Vietnamese:</em> 'in/on' = vị trí; 'into/onto' = chuyển động.</p>",
+        examples:[
+          {en:"He is in the room.", vi:"Anh ấy đang ở trong phòng.", note:"position."},
+          {en:"He walked into the room.", vi:"Anh ấy bước vào phòng.", note:"movement."},
+          {en:"The cat jumped onto the table.", vi:"Con mèo nhảy lên bàn.", note:"movement to surface."}
+        ]},
+      {heading:"Movement prepositions", body:
+        "<p><strong>across</strong> = from one side to the other; <strong>through</strong> = in one side, out the other;</p>"+
+        "<p><strong>along</strong> = following the length; <strong>around</strong> = in a circle;</p>"+
+        "<p><strong>over</strong> = above and across; <strong>under</strong> = below; <strong>above/below</strong> = higher/lower level.</p>"+
+        "<p><em>Vietnamese:</em> across = băng qua; through = xuyên qua; along = dọc theo; over = phía trên; under = ở dưới.</p>",
+        examples:[
+          {en:"We walked across the bridge.", vi:"Chúng tôi đi bộ qua cầu.", note:"'across' = side to side."},
+          {en:"We drove through the tunnel.", vi:"Chúng tôi lái xe xuyên qua đường hầm.", note:"'through' = in and out."},
+          {en:"We walked along the river.", vi:"Chúng tôi đi dọc bờ sông.", note:"'along' = following length."}
+        ]},
+      {heading:"Between and among", body:
+        "<p><strong>between</strong> = two things/people; <strong>among</strong> = more than two.</p>"+
+        "<p><em>Vietnamese:</em> 'between' = giữa hai; 'among' = giữa nhiều.</p>",
+        examples:[
+          {en:"The bank is between the shop and the café.", vi:"Ngân hàng ở giữa cửa hàng và quán cà phê.", note:"two things."},
+          {en:"She felt nervous among strangers.", vi:"Cô ấy thấy lo lắng giữa những người lạ.", note:"more than two."}
+        ]}
+    ]
+  },
+  {
+    id:"lesson-other", title:"Other Uses of Prepositions", module:"Other", icon:"🔧",
+    units:"121–128",
+    objectives:[
+      "Use by + means of transport.",
+      "Use prepositions in passive structures.",
+      "Use common preposition expressions with adjectives and verbs.",
+      "Recognise fixed expressions."
+    ],
+    content:[
+      {heading:"By + transport", body:
+        "<p><strong>by</strong> + means of transport: <em>by bus, by car, by train, by plane</em>.</p>"+
+        "<p>But <strong>on foot</strong> (not by foot).</p>"+
+        "<p><em>Vietnamese:</em> 'by' + phương tiện; 'on foot' = đi bộ.</p>",
+        examples:[
+          {en:"I go to work by bus.", vi:"Tôi đi làm bằng xe buýt.", note:"'by' + transport."},
+          {en:"She goes to school on foot.", vi:"Cô ấy đi bộ đến trường.", note:"fixed expression."}
+        ]},
+      {heading:"Passive with by", body:
+        "<p>In passive voice, <strong>by</strong> introduces the agent: <em>This book was written by Nguyen Du.</em></p>"+
+        "<p><em>Vietnamese:</em> Trong câu bị động, 'by' giới thiệu tác nhân.</p>",
+        examples:[
+          {en:"The song was written by Taylor Swift.", vi:"Bài hát được viết bởi Taylor Swift.", note:"'by' + agent."}
+        ]},
+      {heading:"Common adjective + preposition", body:
+        "<p>Some frequent combinations: interested in, good at, afraid of, married to, proud of, worried about, similar to, keen on, satisfied with, responsible for, capable of, familiar with.</p>"+
+        "<p><em>Vietnamese:</em> Một số cụm tính từ + giới từ thông dụng.</p>",
+        examples:[
+          {en:"I'm interested in art.", vi:"Tôi thích nghệ thuật.", note:"interested in."},
+          {en:"She is good at maths.", vi:"Cô ấy giỏi toán.", note:"good at."},
+          {en:"He is afraid of spiders.", vi:"Anh ấy sợ nhện.", note:"afraid of."}
+        ]}
+    ]
+  },
+  {
+    id:"lesson-noun", title:"Noun + Preposition", module:"Noun", icon:"📘",
+    units:"129",
+    objectives:[
+      "Recognise and use common noun + preposition combinations.",
+      "Avoid typical Vietnamese learner errors.",
+      "Use these patterns in academic and everyday English."
+    ],
+    content:[
+      {heading:"Common noun + preposition patterns", body:
+        "<p>reason for, increase in, solution to, knowledge of, demand for, influence on, attitude to/towards, information about, experience in, connection between.</p>"+
+        "<p><em>Vietnamese:</em> Các cụm danh từ + giới từ thông dụng.</p>",
+        examples:[
+          {en:"The reason for his absence is unknown.", vi:"Lý do cho sự vắng mặt của anh ấy không rõ.", note:"reason for."},
+          {en:"There is an increase in sales.", vi:"Có sự gia tăng doanh số.", note:"increase in."},
+          {en:"We need a solution to this problem.", vi:"Chúng ta cần giải pháp cho vấn đề này.", note:"solution to."},
+          {en:"She has knowledge of the market.", vi:"Cô ấy có kiến thức về thị trường.", note:"knowledge of."},
+          {en:"Demand for skilled workers is high.", vi:"Nhu cầu về lao động có kỹ năng cao.", note:"demand for."},
+          {en:"His influence on the team was huge.", vi:"Ảnh hưởng của anh ấy lên đội rất lớn.", note:"influence on."}
+        ]}
+    ]
+  },
+  {
+    id:"lesson-adjective", title:"Adjective + Preposition", module:"Adjective", icon:"✨",
+    units:"130–131",
+    objectives:[
+      "Use common adjective + preposition combinations.",
+      "Distinguish similar patterns.",
+      "Know when a following noun, pronoun or -ing form is required."
+    ],
+    content:[
+      {heading:"Common adjective + preposition patterns", body:
+        "<p>afraid of, responsible for, capable of, familiar with, proud of, worried about, married to, similar to, keen on, satisfied with.</p>"+
+        "<p><em>Vietnamese:</em> Các cụm tính từ + giới từ thông dụng.</p>",
+        examples:[
+          {en:"She is afraid of flying.", vi:"Cô ấy sợ bay.", note:"afraid of + -ing."},
+          {en:"He is responsible for the project.", vi:"Anh ấy chịu trách nhiệm cho dự án.", note:"responsible for."},
+          {en:"I'm not familiar with this system.", vi:"Tôi không quen với hệ thống này.", note:"familiar with."},
+          {en:"She is proud of her son.", vi:"Cô ấy tự hào về con trai mình.", note:"proud of."},
+          {en:"We are worried about the exam.", vi:"Chúng tôi lo lắng về kỳ thi.", note:"worried about."},
+          {en:"He is married to a doctor.", vi:"Anh ấy kết hôn với một bác sĩ.", note:"married to."}
+        ]}
+    ]
+  },
+  {
+    id:"lesson-verb", title:"Verb + Preposition", module:"Verb", icon:"⚙️",
+    units:"132–136",
+    objectives:[
+      "Use common verb + preposition combinations.",
+      "Distinguish similar verbs.",
+      "Avoid typical Vietnamese learner errors.",
+      "Know when a verb takes no preposition."
+    ],
+    content:[
+      {heading:"Common verb + preposition patterns", body:
+        "<p>listen to, depend on, wait for, apologise to somebody for something, agree with somebody / agree to something, suffer from, concentrate on, apply for a job / apply to an organisation, look for, look after, complain about something / complain to somebody.</p>"+
+        "<p><em>Vietnamese:</em> Các cụm động từ + giới từ thông dụng.</p>",
+        examples:[
+          {en:"Please listen to me.", vi:"Xin hãy nghe tôi.", note:"listen to."},
+          {en:"It depends on the weather.", vi:"Nó phụ thuộc vào thời tiết.", note:"depend on."},
+          {en:"I'm waiting for the bus.", vi:"Tôi đang chờ xe buýt.", note:"wait for."},
+          {en:"She apologised for being late.", vi:"Cô ấy xin lỗi vì đến muộn.", note:"apologise for."},
+          {en:"I agree with you.", vi:"Tôi đồng ý với bạn.", note:"agree with + person."},
+          {en:"They agreed to the plan.", vi:"Họ đồng ý với kế hoạch.", note:"agree to + proposal."},
+          {en:"He suffers from asthma.", vi:"Anh ấy bị hen suyễn.", note:"suffer from."},
+          {en:"Concentrate on your work.", vi:"Tập trung vào công việc của bạn.", note:"concentrate on."},
+          {en:"She applied for a job.", vi:"Cô ấy ứng tuyển một công việc.", note:"apply for + job."},
+          {en:"He applied to the university.", vi:"Anh ấy nộp đơn vào trường đại học.", note:"apply to + organisation."},
+          {en:"I'm looking for my keys.", vi:"Tôi đang tìm chìa khóa.", note:"look for."},
+          {en:"She looks after her mother.", vi:"Cô ấy chăm sóc mẹ mình.", note:"look after."},
+          {en:"They complained about the noise.", vi:"Họ phàn nàn về tiếng ồn.", note:"complain about."},
+          {en:"I complained to the manager.", vi:"Tôi phàn nàn với quản lý.", note:"complain to + person."}
+        ]}
+    ]
+  }
+];
+
+/* ============================ 3. STORAGE ============================ */
+const STORAGE_KEY = "prepMasteryData_v1";
+
+function defaultState() {
+  return {
+    completedLessons: [],
+    attempts: {},          // questionId: { correct: bool, userAnswer, date }
+    tests: [],             // { date, score, total, duration }
+    mistakes: {},          // questionId: { question, userAnswer, correctAnswer, explanation, module, level, date }
+    prefs: { showVietnamese: true, theme: "light", sound: false },
+    streak: { current: 0, lastDate: null },
+    lastActivity: null
+  };
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return defaultState();
+    const parsed = JSON.parse(raw);
+    // validate & merge
+    const base = defaultState();
+    return {
+      ...base,
+      ...parsed,
+      prefs: { ...base.prefs, ...(parsed.prefs || {}) },
+      streak: { ...base.streak, ...(parsed.streak || {}) }
+    };
+  } catch (e) {
+    console.warn("Failed to load state, using defaults.", e);
+    return defaultState();
+  }
+}
+
+let state = loadState();
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch (e) {
+    console.warn("Could not save state.", e);
+  }
+}
+
+/* ============================ 4. HELPERS ============================ */
+function $(sel, root = document) { return root.querySelector(sel); }
+function $$(sel, root = document) { return Array.from(root.querySelectorAll(sel)); }
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, s => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[s]));
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function normalizeAnswer(str) {
+  return String(str).trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function todayStr() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function showToast(msg) {
+  const t = $("#toast");
+  $("#toastMsg").textContent = msg;
+  t.classList.remove("hidden");
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.add("hidden"), 2600);
+}
+
+let confirmCallback = null;
+function openConfirm(msg, cb) {
+  $("#confirmMsg").textContent = msg;
+  confirmCallback = cb;
+  $("#confirmModal").classList.remove("hidden");
+  $("#confirmModal").classList.add("flex");
+  $("#confirmOk").focus();
+}
+function closeConfirm() {
+  $("#confirmModal").classList.add("hidden");
+  $("#confirmModal").classList.remove("flex");
+  confirmCallback = null;
+}
+$("#confirmOk").addEventListener("click", () => {
+  if (typeof confirmCallback === "function") confirmCallback();
+  closeConfirm();
+});
+$$("[data-confirm-cancel]").forEach(el => el.addEventListener("click", closeConfirm));
+
+/* ============================ 5. PROGRESS ============================ */
+function totalQuestions() { return QUESTIONS.length; }
+
+function answeredCount() {
+  return Object.keys(state.attempts).length;
+}
+
+function correctCount() {
+  return Object.values(state.attempts).filter(a => a.correct).length;
+}
+
+function accuracy() {
+  const a = answeredCount();
+  return a === 0 ? 0 : Math.round((correctCount() / a) * 100);
+}
+
+function accuracyByModule() {
+  const map = {};
+  Object.entries(state.attempts).forEach(([id, att]) => {
+    const q = QUESTIONS.find(q => q.id === id);
+    if (!q) return;
+    if (!map[q.module]) map[q.module] = { correct: 0, total: 0 };
+    map[q.module].total++;
+    if (att.correct) map[q.module].correct++;
+  });
+  Object.keys(map).forEach(k => {
+    map[k].pct = map[k].total ? Math.round((map[k].correct / map[k].total) * 100) : 0;
+  });
+  return map;
+}
+
+function recordAttempt(q, userAnswer, isCorrect) {
+  state.attempts[q.id] = {
+    correct: isCorrect,
+    userAnswer: userAnswer,
+    date: new Date().toISOString()
+  };
+  if (!isCorrect) {
+    state.mistakes[q.id] = {
+      question: q.question,
+      userAnswer: userAnswer,
+      correctAnswer: Array.isArray(q.answer) ? q.answer.join(" / ") : q.answer,
+      explanation: q.explanation,
+      vietnameseExplanation: q.vietnameseExplanation || "",
+      module: q.module,
+      level: q.level,
+      type: q.type,
+      date: new Date().toISOString()
+    };
+  } else {
+    // remove from mistakes if now correct
+    if (state.mistakes[q.id]) delete state.mistakes[q.id];
+  }
+  // streak
+  const today = todayStr();
+  if (state.streak.lastDate !== today) {
+    if (state.streak.lastDate) {
+      const last = new Date(state.streak.lastDate);
+      const diff = Math.round((new Date(today) - last) / 86400000);
+      state.streak.current = diff === 1 ? state.streak.current + 1 : 1;
+    } else {
+      state.streak.current = 1;
+    }
+    state.streak.lastDate = today;
+  }
+  state.lastActivity = new Date().toISOString();
+  saveState();
+}
+
+function markLessonComplete(lessonId) {
+  if (!state.completedLessons.includes(lessonId)) {
+    state.completedLessons.push(lessonId);
+    saveState();
+  }
+}
+
+/* ============================ 6. NAVIGATION ============================ */
+const NAV_ITEMS = [
+  { id:"dashboard", label:"Dashboard", icon:"📊" },
+  { id:"lessons",   label:"Grammar Lessons", icon:"📚" },
+  { id:"practice",  label:"Practice Centre", icon:"✏️" },
+  { id:"test",      label:"Mixed Test", icon:"⏱️" },
+  { id:"mistakes",  label:"Mistakes Review", icon:"🔁" },
+  { id:"progress",  label:"Progress", icon:"📈" },
+  { id:"settings",  label:"Settings", icon:"⚙️" }
+];
+
+let currentView = "dashboard";
+
+function renderNav() {
+  const desktop = $("#desktopNav");
+  const mobile = $("#mobileNavList");
+  const build = (container) => {
+    container.innerHTML = NAV_ITEMS.map(item => `
+      <button class="nav-item w-full text-left flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-slate-100 focus-ring ${currentView===item.id?'active':''}"
+        data-nav="${item.id}">
+        <span aria-hidden="true">${item.icon}</span>
+        <span>${item.label}</span>
+      </button>
+    `).join("");
+    container.querySelectorAll("[data-nav]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        navigate(btn.dataset.nav);
+        closeMobileNav();
+      });
+    });
+  };
+  build(desktop);
+  build(mobile);
+}
+
+function navigate(view) {
+  currentView = view;
+  renderNav();
+  const main = $("#view");
+  main.innerHTML = "";
+  main.focus();
+  switch (view) {
+    case "dashboard": renderDashboard(); break;
+    case "lessons": renderLessons(); break;
+    case "practice": renderPracticeCentre(); break;
+    case "test": renderTestSetup(); break;
+    case "mistakes": renderMistakes(); break;
+    case "progress": renderProgress(); break;
+    case "settings": renderSettings(); break;
+    default: renderDashboard();
+  }
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+/* Mobile nav */
+function openMobileNav() {
+  $("#mobileNavOverlay").classList.remove("hidden");
+  $("#mobileMenuBtn").setAttribute("aria-expanded", "true");
+  $("#mobileNav").focus();
+}
+function closeMobileNav() {
+  $("#mobileNavOverlay").classList.add("hidden");
+  $("#mobileMenuBtn").setAttribute("aria-expanded", "false");
+}
+$("#mobileMenuBtn").addEventListener("click", openMobileNav);
+$$("[data-close-nav]").forEach(el => el.addEventListener("click", closeMobileNav));
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") { closeMobileNav(); closeConfirm(); }
+});
+
+/* ============================ 7. DASHBOARD ============================ */
+function renderDashboard() {
+  const acc = accuracy();
+  const answered = answeredCount();
+  const total = totalQuestions();
+  const completed = state.completedLessons.length;
+  const totalLessons = LESSONS.length;
+  const byModule = accuracyByModule();
+
+  // weakest module
+  let weakest = "—";
+  let weakestPct = 101;
+  Object.entries(byModule).forEach(([mod, data]) => {
+    if (data.total >= 3 && data.pct < weakestPct) { weakestPct = data.pct; weakest = mod; }
+  });
+
+  const recent = Object.entries(state.attempts)
+    .sort((a,b) => new Date(b[1].date) - new Date(a[1].date))
+    .slice(0, 5)
+    .map(([id, att]) => {
+      const q = QUESTIONS.find(q => q.id === id);
+      return q ? `<li class="flex items-center justify-between text-sm py-1.5 border-b border-slate-100 last:border-0">
+        <span class="truncate pr-3">${escapeHtml(q.question).slice(0, 60)}…</span>
+        <span class="shrink-0 ${att.correct ? "text-green-600" : "text-red-600"} font-semibold">${att.correct ? "✓" : "✗"}</span>
+      </li>` : "";
+    }).join("") || `<li class="text-sm text-slate-400 py-2">No activity yet. Start with a lesson or practice.</li>`;
+
+  $("#view").innerHTML = `
+    <div class="fade-in">
+      <h2 class="text-2xl font-bold mb-1">Dashboard</h2>
+      <p class="text-slate-500 text-sm mb-6">Welcome back! Keep your streak going.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div class="card p-5">
+          <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Overall accuracy</p>
+          <p class="text-3xl font-bold text-brand-700 mt-1">${acc}%</p>
+          <div class="progress-track mt-3"><div class="progress-fill" style="width:${acc}%"></div></div>
+        </div>
+        <div class="card p-5">
+          <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Questions answered</p>
+          <p class="text-3xl font-bold text-brand-700 mt-1">${answered}<span class="text-base text-slate-400 font-normal"> / ${total}</span></p>
+          <div class="progress-track mt-3"><div class="progress-fill" style="width:${total?Math.round(answered/total*100):0}%"></div></div>
+        </div>
+        <div class="card p-5">
+          <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Lessons completed</p>
+          <p class="text-3xl font-bold text-brand-700 mt-1">${completed}<span class="text-base text-slate-400 font-normal"> / ${totalLessons}</span></p>
+          <div class="progress-track mt-3"><div class="progress-fill" style="width:${totalLessons?Math.round(completed/totalLessons*100):0}%"></div></div>
+        </div>
+        <div class="card p-5">
+          <p class="text-xs text-slate-500 font-medium uppercase tracking-wide">Practice streak</p>
+          <p class="text-3xl font-bold text-brand-700 mt-1">${state.streak.current} <span class="text-base text-slate-400 font-normal">day${state.streak.current===1?"":"s"}</span></p>
+          <p class="text-xs text-slate-400 mt-3">${state.streak.lastDate ? "Last: "+state.streak.lastDate : "Start today!"}</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="card p-5">
+          <h3 class="font-semibold mb-3">Accuracy by module</h3>
+          ${Object.keys(byModule).length === 0 ? `<p class="text-sm text-slate-400">No data yet.</p>` :
+            Object.entries(byModule).map(([mod, d]) => `
+              <div class="mb-3">
+                <div class="flex justify-between text-sm mb-1">
+                  <span>${mod}</span>
+                  <span class="font-semibold ${d.pct>=70?"text-green-600":d.pct>=40?"text-amber-600":"text-red-600"}">${d.pct}%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width:${d.pct}%"></div></div>
+              </div>
+            `).join("")}
+          <p class="text-xs text-slate-400 mt-3">Weakest: <strong>${weakest}</strong> ${weakestPct<=100?`(${weakestPct}%)`:""}</p>
+        </div>
+
+        <div class="card p-5">
+          <h3 class="font-semibold mb-3">Recent activity</h3>
+          <ul>${recent}</ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <button class="focus-ring px-5 py-3 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700" data-nav="practice">Continue learning →</button>
+        <button class="focus-ring px-5 py-3 rounded-xl border border-slate-300 font-semibold hover:bg-slate-50" data-nav="lessons">Browse lessons</button>
+      </div>
+    </div>
+  `;
+  $("#view").querySelectorAll("[data-nav]").forEach(b => b.addEventListener("click", () => navigate(b.dataset.nav)));
+}
+
+/* ============================ 8. LESSONS ============================ */
+function renderLessons() {
+  $("#view").innerHTML = `
+    <div class="fade-in">
+      <h2 class="text-2xl font-bold mb-1">Grammar Lessons</h2>
+      <p class="text-slate-500 text-sm mb-6">Study the rules, examples and Vietnamese explanations, then complete the quick practice.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        ${LESSONS.map(l => {
+          const done = state.completedLessons.includes(l.id);
+          return `
+            <article class="card p-5 flex flex-col">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <span class="text-2xl" aria-hidden="true">${l.icon}</span>
+                  <h3 class="font-bold text-lg mt-1">${l.title}</h3>
+                  <p class="text-xs text-slate-500">Units ${l.units}</p>
+                </div>
+                ${done ? `<span class="badge badge-b1">Completed</span>` : ""}
+              </div>
+              <p class="text-sm text-slate-600 mt-3 flex-1">${l.objectives[0]}</p>
+              <button class="focus-ring mt-4 self-start px-4 py-2 rounded-lg bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700" data-lesson="${l.id}">Open lesson</button>
+            </article>
+          `;
+        }).join("")}
+      </div>
+    </div>
+  `;
+  $("#view").querySelectorAll("[data-lesson]").forEach(b => b.addEventListener("click", () => openLesson(b.dataset.lesson)));
+}
+
+function openLesson(lessonId) {
+  const lesson = LESSONS.find(l => l.id === lessonId);
+  if (!lesson) return;
+  const practiceQs = QUESTIONS.filter(q => q.module === lesson.module).slice(0, 8);
+
+  $("#view").innerHTML = `
+    <div class="fade-in max-w-3xl">
+      <button class="focus-ring text-sm text-brand-600 hover:underline mb-4" data-back>← Back to lessons</button>
+      <h2 class="text-2xl font-bold mb-1">${lesson.icon} ${lesson.title}</h2>
+      <p class="text-slate-500 text-sm mb-6">Units ${lesson.units} · B1–B2</p>
+
+      <section class="card p-5 mb-6">
+        <h3 class="font-semibold mb-3">A. Learning objectives</h3>
+        <ul class="list-disc pl-5 space-y-1 text-sm text-slate-700">
+          ${lesson.objectives.map(o => `<li>${o}</li>`).join("")}
+        </ul>
+      </section>
+
+      <section class="card p-5 mb-6">
+        <h3 class="font-semibold mb-4">B. Grammar explanation</h3>
+        ${lesson.content.map(c => `
+          <div class="mb-6 last:mb-0">
+            <h4 class="font-semibold text-brand-700 mb-2">${c.heading}</h4>
+            <div class="text-sm text-slate-700 space-y-2">${c.body}</div>
+            <div class="mt-3 space-y-2">
+              ${c.examples.map(ex => `
+                <div class="bg-slate-50 rounded-lg p-3 text-sm">
+                  <p class="font-medium">${ex.en}</p>
+                  ${state.prefs.showVietnamese ? `<p class="text-slate-500 italic">${ex.vi}</p>` : ""}
+                  <p class="text-xs text-brand-600 mt-1">↳ ${ex.note}</p>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+        `).join("")}
+      </section>
+
+      <section class="card p-5 mb-6" id="quickPractice">
+        <h3 class="font-semibold mb-1">C. Quick practice</h3>
+        <p class="text-sm text-slate-500 mb-4">Answer these questions to check your understanding. You need to complete them to mark the lesson as finished.</p>
+        <div id="lessonQuiz"></div>
+      </section>
+
+      <section class="card p-5">
+        <h3 class="font-semibold mb-2">D. Completion</h3>
+        <p class="text-sm text-slate-600 mb-3">Mark the lesson as completed once you have opened the content and finished the quick practice.</p>
+        <button id="completeLessonBtn" class="focus-ring px-5 py-2.5 rounded-xl bg-green-600 text-white font-semibold hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+          Mark lesson as completed
+        </button>
+        <p id="completeHint" class="text-xs text-slate-400 mt-2">Finish the quick practice to enable this button.</p>
+      </section>
+    </div>
+  `;
+
+  $("#view").querySelector("[data-back]").addEventListener("click", () => navigate("lessons"));
+
+  // Quick practice
+  let quizDone = false;
+  const quizContainer = $("#lessonQuiz");
+  const answeredLocal = new Set();
+  const totalQs = practiceQs.length;
+
+  function renderQuiz() {
+    quizContainer.innerHTML = practiceQs.map((q, idx) => renderQuestionHTML(q, idx, "lesson")).join("");
+    attachQuestionHandlers(quizContainer, practiceQs, (q, isCorrect, userAnswer) => {
+      answeredLocal.add(q.id);
+      if (answeredLocal.size >= totalQs) {
+        quizDone = true;
+        const btn = $("#completeLessonBtn");
+        if (btn) { btn.disabled = false; }
+        const hint = $("#completeHint");
+        if (hint) hint.textContent = "Great! You can now mark the lesson as completed.";
+      }
+    }, "lesson");
+  }
+  renderQuiz();
+
+  $("#completeLessonBtn").addEventListener("click", () => {
+    if (!quizDone) return;
+    markLessonComplete(lesson.id);
+    showToast("Lesson marked as completed!");
+    openLesson(lessonId);
+  });
+}
+
+/* ============================ 9. QUESTION RENDERING ============================ */
+function renderQuestionHTML(q, idx, context) {
+  const num = idx + 1;
+  let inputHTML = "";
+
+  if (q.type === "mcq" || q.type === "choose" || q.type === "error") {
+    const opts = q.type === "mcq" ? shuffle(q.options) : q.options;
+    inputHTML = `
+      <div class="space-y-2 mt-3" role="radiogroup" aria-label="Answer options">
+        ${opts.map((opt, i) => `
+          <button type="button" class="option-btn w-full text-left border border-slate-200 rounded-xl px-4 py-3 text-sm focus-ring"
+            data-option="${escapeHtml(opt)}" data-qid="${q.id}">
+            <span class="font-semibold text-slate-400 mr-2">${String.fromCharCode(65+i)}.</span>
+            ${escapeHtml(opt)}
+          </button>
+        `).join("")}
+      </div>
+    `;
+  } else if (q.type === "fill") {
+    inputHTML = `
+      <div class="mt-3 flex flex-col sm:flex-row gap-2">
+        <label class="sr-only" for="fib-${q.id}">Your answer</label>
+        <input id="fib-${q.id}" type="text" class="flex-1 border border-slate-300 rounded-xl px-4 py-3 text-sm focus-ring" placeholder="Type the missing preposition" data-qid="${q.id}" autocomplete="off" />
+        <button type="button" class="focus-ring px-5 py-3 rounded-xl bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700" data-submit-fib="${q.id}">Check</button>
+      </div>
+    `;
+  } else if (q.type === "match") {
+    const left = shuffle(q.pairs.map(p => p[0]));
+    const right = shuffle(q.pairs.map(p => p[1]));
+    inputHTML = `
+      <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <p class="text-xs font-semibold text-slate-500 mb-2">Column A</p>
+          <div class="space-y-2">
+            ${left.map((item,i) => `
+              <div class="border border-slate-200 rounded-xl px-3 py-2.5 text-sm bg-slate-50" data-match-left="${escapeHtml(item)}">${escapeHtml(item)}</div>
+            `).join("")}
+          </div>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-slate-500 mb-2">Column B</p>
+          <div class="space-y-2">
+            ${right.map((item,i) => `
+              <button type="button" class="option-btn w-full text-left border border-slate-200 rounded-xl px-3 py-2.5 text-sm focus-ring" data-match-right="${escapeHtml(item)}" data-qid="${q.id}">${escapeHtml(item)}</button>
+            `).join("")}
+          </div>
+        </div>
+      </div>
+      <p class="text-xs text-slate-400 mt-2">Tap a word in Column A, then its match in Column B.</p>
+    `;
+  } else if (q.type === "transform" || q.type === "translation") {
+    inputHTML = `
+      <div class="mt-3">
+        <label class="sr-only" for="open-${q.id}">Your answer</label>
+        <textarea id="open-${q.id}" rows="2" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm focus-ring" placeholder="Write your answer…" data-qid="${q.id}"></textarea>
+        <button type="button" class="focus-ring mt-2 px-5 py-2.5 rounded-xl bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700" data-submit-open="${q.id}">Check</button>
+      </div>
+    `;
+  } else if (q.type === "context") {
+    inputHTML = `
+      <div class="mt-3">
+        <label class="sr-only" for="ctx-${q.id}">Your answers, separated by commas</label>
+        <textarea id="ctx-${q.id}" rows="3" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm focus-ring" placeholder="Type the missing prepositions in order, separated by commas" data-qid="${q.id}"></textarea>
+        <button type="button" class="focus-ring mt-2 px-5 py-2.5 rounded-xl bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700" data-submit-open="${q.id}">Check</button>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="border border-slate-200 rounded-xl p-4 mb-4" data-question="${q.id}" data-context="${context}">
+      <div class="flex items-center gap-2 mb-2 flex-wrap">
+        <span class="text-xs font-semibold text-slate-400">Q${num}</span>
+        <span class="badge badge-module">${q.module}</span>
+        <span class="badge ${q.level==="B1"?"badge-b1":"badge-b2"}">${q.level}</span>
+      </div>
+      <p class="text-sm font-medium text-slate-800">${escapeHtml(q.question)}</p>
+      ${inputHTML}
+      <div class="feedback mt-3 hidden" aria-live="polite"></div>
+    </div>
+  `;
+}
+
+function attachQuestionHandlers(container, questions, onAnswered, context) {
+  const matchState = {};
+
+  // MCQ / choose / error
+  container.querySelectorAll("[data-option]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const qid = btn.dataset.qid;
+      const q = questions.find(x => x.id === qid);
+      if (!q) return;
+      const parent = btn.closest("[data-question]");
+      if (parent.dataset.answered === "true") return;
+      const chosen = btn.dataset.option;
+      const isCorrect = normalizeAnswer(chosen) === normalizeAnswer(q.answer);
+      // visual
+      parent.querySelectorAll("[data-option]").forEach(b => {
+        b.classList.remove("option-selected","option-correct","option-wrong");
+        if (b.dataset.option === q.answer) b.classList.add("option-correct");
+      });
+      if (!isCorrect) btn.classList.add("option-wrong");
+      parent.dataset.answered = "true";
+      showFeedback(parent, q, chosen, isCorrect);
+      recordAttempt(q, chosen, isCorrect);
+      if (onAnswered) onAnswered(q, isCorrect, chosen);
+    });
+  });
+
+  // Fill
+  container.querySelectorAll("[data-submit-fib]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const qid = btn.dataset.submitFib;
+      const q = questions.find(x => x.id === qid);
+      if (!q) return;
+      const parent = btn.closest("[data-question]");
+      if (parent.dataset.answered === "true") return;
+      const input = parent.querySelector(`#fib-${qid}`);
+      const val = input.value;
+      const accepted = Array.isArray(q.answer) ? q.answer : [q.answer];
+      const isCorrect = accepted.some(a => normalizeAnswer(a) === normalizeAnswer(val));
+      parent.dataset.answered = "true";
+      input.disabled = true;
+      btn.disabled = true;
+      showFeedback(parent, q, val, isCorrect);
+      recordAttempt(q, val, isCorrect);
+      if (onAnswered) onAnswered(q, isCorrect, val);
+    });
+  });
+
+  // Open (transform / translation / context)
+  container.querySelectorAll("[data-submit-open]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const qid = btn.dataset.submitOpen;
+      const q = questions.find(x => x.id === qid);
+      if (!q) return;
+      const parent = btn.closest("[data-question]");
+      if (parent.dataset.answered === "true") return;
+      const ta = parent.querySelector(`#open-${qid}, #ctx-${qid}`);
+      const val = ta.value;
+      const accepted = Array.isArray(q.answer) ? q.answer : [q.answer];
+      let isCorrect = accepted.some(a => normalizeAnswer(a) === normalizeAnswer(val));
+      if (q.type === "context") {
+        // compare comma separated
+        const userParts = val.split(",").map(s => normalizeAnswer(s));
+        const correctParts = accepted[0].split(",").map(s => normalizeAnswer(s));
+        isCorrect = userParts.length === correctParts.length && userParts.every((p,i) => p === correctParts[i]);
+      }
+      parent.dataset.answered = "true";
+      ta.disabled = true;
+      btn.disabled = true;
+      showFeedback(parent, q, val, isCorrect, true);
+      recordAttempt(q, val, isCorrect);
+      if (onAnswered) onAnswered(q, isCorrect, val);
+    });
+  });
+
+  // Matching
+  const matchLefts = container.querySelectorAll("[data-match-left]");
+  matchLefts.forEach(el => {
+    el.addEventListener("click", () => {
+      matchLefts.forEach(x => x.classList.remove("option-selected"));
+      el.classList.add("option-selected");
+      matchState.selected = el.dataset.matchLeft;
+    });
+  });
+  container.querySelectorAll("[data-match-right]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const qid = btn.dataset.qid;
+      const q = questions.find(x => x.id === qid);
+      if (!q) return;
+      if (!matchState.selected) { showToast("Select an item from Column A first."); return; }
+      const parent = btn.closest("[data-question]");
+      if (parent.dataset.answered === "true") return;
+      // find expected pair
+      const pair = q.pairs.find(p => p[0] === matchState.selected);
+      const isCorrect = pair && pair[1] === btn.dataset.matchRight;
+      // visual
+      const leftEl = parent.querySelector(`[data-match-left="${CSS.escape(matchState.selected)}"]`);
+      if (leftEl) {
+        leftEl.classList.remove("option-selected");
+        leftEl.classList.add(isCorrect ? "option-correct" : "option-wrong");
+      }
+      btn.classList.add(isCorrect ? "option-correct" : "option-wrong");
+      if (!isCorrect) {
+        showFeedback(parent, q, matchState.selected + " → " + btn.dataset.matchRight, false);
+      }
+      // check if all matched correctly
+      const allLeft = parent.querySelectorAll("[data-match-left]");
+      const allRight = parent.querySelectorAll("[data-match-right]");
+      const correctCount = parent.querySelectorAll(".option-correct").length;
+      if (correctCount >= q.pairs.length * 2) {
+        parent.dataset.answered = "true";
+        showFeedback(parent, q, "All matched", true);
+        recordAttempt(q, "matched", true);
+        if (onAnswered) onAnswered(q, true, "matched");
+      }
+      matchState.selected = null;
+    });
+  });
+}
+
+function showFeedback(parent, q, userAnswer, isCorrect, openEnded = false) {
+  const fb = parent.querySelector(".feedback");
+  if (!fb) return;
+  fb.classList.remove("hidden");
+  const correctAnswer = Array.isArray(q.answer) ? q.answer.join(" / ") : q.answer;
+  let html = "";
+  if (isCorrect) {
+    html += `<div class="flex items-start gap-2 text-green-700 bg-green-50 border border-green-200 rounded-lg p-3 text-sm">
+      <span aria-hidden="true">✓</span>
+      <div><p class="font-semibold">Correct.</p><p class="mt-0.5">${escapeHtml(q.explanation)}</p>`;
+  } else {
+    html += `<div class="flex items-start gap-2 text-red-700 bg-red-50 border border-red-200 rounded-lg p-3 text-sm">
+      <span aria-hidden="true">✗</span>
+      <div><p class="font-semibold">Not quite.</p>
+      <p class="mt-0.5"><strong>Correct answer:</strong> ${escapeHtml(correctAnswer)}</p>
+      <p class="mt-0.5">${escapeHtml(q.explanation)}</p>`;
+  }
+  if (state.prefs.showVietnamese && q.vietnameseExplanation) {
+    html += `<p class="mt-1 italic text-slate-600">${escapeHtml(q.vietnameseExplanation)}</p>`;
+  }
+  if (openEnded && !isCorrect) {
+    html += `<p class="mt-2 text-xs">This is a model answer. Compare with your own and self-evaluate.</p>`;
+  }
+  html += `</div></div>`;
+  fb.innerHTML = html;
+}
+
+/* ============================ 10. PRACTICE CENTRE ============================ */
+function renderPracticeCentre() {
+  $("#view").innerHTML = `
+    <div class="fade-in">
+      <h2 class="text-2xl font-bold mb-1">Practice Centre</h2>
+      <p class="text-slate-500 text-sm mb-6">Choose a module, difficulty, or custom set. All questions are B1–B2 level.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+        <div class="card p-5">
+          <h3 class="font-semibold mb-3">Practice by module</h3>
+          <div class="flex flex-wrap gap-2">
+            ${["Time","Place","Other","Noun","Adjective","Verb"].map(m => `
+              <button class="focus-ring px-4 py-2 rounded-lg border border-slate-300 text-sm hover:bg-brand-50 hover:border-brand-300" data-module="${m}">${m}</button>
+            `).join("")}
+          </div>
+        </div>
+        <div class="card p-5">
+          <h3 class="font-semibold mb-3">Practice by difficulty</h3>
+          <div class="flex flex-wrap gap-2">
+            <button class="focus-ring px-4 py-2 rounded-lg border border-slate-300 text-sm hover:bg-brand-50" data-level="B1">B1</button>
+            <button class="focus-ring px-4 py-2 rounded-lg border border-slate-300 text-sm hover:bg-brand-50" data-level="B2">B2</button>
+            <button class="focus-ring px-4 py-2 rounded-lg border border-slate-300 text-sm hover:bg-brand-50" data-level="Mixed">Mixed B1–B2</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-5 mb-6">
+        <h3 class="font-semibold mb-3">Custom test</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1" for="customCount">Number of questions</label>
+            <select id="customCount" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus-ring">
+              <option value="5">5</option><option value="10" selected>10</option>
+              <option value="15">15</option><option value="20">20</option>
+              <option value="30">30</option><option value="40">40</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="customModule">Module</label>
+            <select id="customModule" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus-ring">
+              <option value="all">All modules</option>
+              <option value="Time">Time</option><option value="Place">Place</option>
+              <option value="Other">Other</option><option value="Noun">Noun</option>
+              <option value="Adjective">Adjective</option><option value="Verb">Verb</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="customLevel">Difficulty</label>
+            <select id="customLevel" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus-ring">
+              <option value="all">Mixed</option><option value="B1">B1</option><option value="B2">B2</option>
+            </select>
+          </div>
+        </div>
+        <button id="startCustom" class="focus-ring mt-4 px-5 py-2.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700">Start custom practice</button>
+      </div>
+
+      <div class="card p-5">
+        <h3 class="font-semibold mb-3">Random practice</h3>
+        <p class="text-sm text-slate-500 mb-3">A shuffled set of 10 questions from all modules.</p>
+        <button id="startRandom" class="focus-ring px-5 py-2.5 rounded-xl border border-slate-300 font-semibold hover:bg-slate-50">Start random</button>
+      </div>
+
+      <div id="practiceRunner" class="mt-8"></div>
+    </div>
+  `;
+
+  $("#view").querySelectorAll("[data-module]").forEach(b => b.addEventListener("click", () => startPractice({ module: b.dataset.module })));
+  $("#view").querySelectorAll("[data-level]").forEach(b => b.addEventListener("click", () => startPractice({ level: b.dataset.level })));
+  $("#startRandom").addEventListener("click", () => startPractice({ random: true }));
+  $("#startCustom").addEventListener("click", () => {
+    startPractice({
+      module: $("#customModule").value,
+      level: $("#customLevel").value,
+      count: parseInt($("#customCount").value, 10)
+    });
+  });
+}
+
+function startPractice(opts) {
+  let pool = QUESTIONS.slice();
+  if (opts.module && opts.module !== "all") pool = pool.filter(q => q.module === opts.module);
+  if (opts.level && opts.level !== "Mixed" && opts.level !== "all") pool = pool.filter(q => q.level === opts.level);
+  if (opts.random) pool = shuffle(pool);
+  const count = opts.count || 10;
+  pool = shuffle(pool).slice(0, count);
+  if (pool.length === 0) { showToast("No questions match these filters."); return; }
+
+  renderPracticeRunner(pool, opts.module || "All modules", opts.level || "Mixed");
+}
+
+function renderPracticeRunner(questions, moduleLabel, levelLabel) {
+  const runner = $("#practiceRunner");
+  let answered = 0;
+  const total = questions.length;
+  const localAnswers = {};
+
+  runner.innerHTML = `
+    <div class="card p-5 mb-4">
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <div>
+          <h3 class="font-bold">Practice: ${moduleLabel} · ${levelLabel}</h3>
+          <p class="text-xs text-slate-500">${total} questions</p>
+        </div>
+        <span id="practiceProgress" class="text-sm font-semibold text-brand-700">0 / ${total}</span>
+      </div>
+      <div class="progress-track mt-3"><div id="practiceBar" class="progress-fill" style="width:0%"></div></div>
+    </div>
+    <div id="practiceQuestions">
+      ${questions.map((q,i) => renderQuestionHTML(q, i, "practice")).join("")}
+    </div>
+    <div class="mt-6 flex justify-between items-center">
+      <button class="focus-ring px-5 py-2.5 rounded-xl border border-slate-300 font-semibold hover:bg-slate-50" data-nav="practice">← Back</button>
+      <button id="finishPractice" class="focus-ring px-5 py-2.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700">Finish</button>
+    </div>
+  `;
+
+  const updateProgress = () => {
+    $("#practiceProgress").textContent = `${answered} / ${total}`;
+    $("#practiceBar").style.width = `${total ? Math.round(answered/total*100) : 0}%`;
+  };
+
+  attachQuestionHandlers($("#practiceQuestions"), questions, (q, isCorrect, userAnswer) => {
+    if (!localAnswers[q.id]) {
+      answered++;
+      localAnswers[q.id] = true;
+      updateProgress();
+    }
+  }, "practice");
+
+  runner.querySelector("[data-nav]").addEventListener("click", () => navigate("practice"));
+  $("#finishPractice").addEventListener("click", () => {
+    if (answered < total) {
+      openConfirm(`You have answered ${answered} of ${total} questions. Finish anyway?`, () => {
+        showToast("Practice session saved.");
+        navigate("progress");
+      });
+    } else {
+      showToast("Practice session saved.");
+      navigate("progress");
+    }
+  });
+}
+
+/* ============================ 11. MIXED TEST ============================ */
+let testState = null;
+let testTimerInterval = null;
+
+function renderTestSetup() {
+  clearInterval(testTimerInterval);
+  $("#view").innerHTML = `
+    <div class="fade-in max-w-2xl">
+      <h2 class="text-2xl font-bold mb-1">Mixed Test</h2>
+      <p class="text-slate-500 text-sm mb-6">40 questions · 30 minutes · automatically submitted when time runs out.</p>
+      <div class="card p-6">
+        <h3 class="font-semibold mb-2">Test rules</h3>
+        <ul class="list-disc pl-5 text-sm text-slate-700 space-y-1 mb-5">
+          <li>40 questions from all modules.</li>
+          <li>30-minute countdown.</li>
+          <li>You can navigate between questions.</li>
+          <li>Your answers are saved locally.</li>
+          <li>You will see your score and explanations after submission.</li>
+        </ul>
+        <button id="startTest" class="focus-ring px-6 py-3 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700">Start test</button>
+      </div>
+    </div>
+  `;
+  $("#startTest").addEventListener("click", startTest);
+}
+
+function startTest() {
+  const pool = shuffle(QUESTIONS).slice(0, 40);
+  testState = {
+    questions: pool,
+    answers: {},
+    current: 0,
+    startTime: Date.now(),
+    duration: 30 * 60,
+    submitted: false
+  };
+  renderTestRunner();
+}
+
+function renderTestRunner() {
+  clearInterval(testTimerInterval);
+  const main = $("#view");
+  const total = testState.questions.length;
+  const q = testState.questions[testState.current];
+
+  main.innerHTML = `
+    <div class="fade-in">
+      <div class="card p-4 mb-4 flex items-center justify-between flex-wrap gap-3 sticky top-16 md:top-0 z-30">
+        <div>
+          <p class="text-xs text-slate-500">Question ${testState.current+1} of ${total}</p>
+          <p class="font-bold">Mixed Test</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="testTimer" class="font-mono font-bold text-brand-700 text-lg" aria-live="polite">30:00</span>
+          <button id="submitTest" class="focus-ring px-4 py-2 rounded-lg bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700">Submit</button>
+        </div>
+      </div>
+
+      <div id="testQuestionArea">
+        ${renderTestQuestion(q)}
+      </div>
+
+      <div class="flex justify-between items-center mt-6">
+        <button id="prevQ" class="focus-ring px-5 py-2.5 rounded-xl border border-slate-300 font-semibold hover:bg-slate-50" ${testState.current===0?"disabled":""}>← Previous</button>
+        <span class="text-sm text-slate-500">${Object.keys(testState.answers).length} answered</span>
+        <button id="nextQ" class="focus-ring px-5 py-2.5 rounded-xl border border-slate-300 font-semibold hover:bg-slate-50" ${testState.current===total-1?"disabled":""}>Next →</button>
+      </div>
+    </div>
+  `;
+
+  $("#prevQ").addEventListener("click", () => { if (testState.current>0){ testState.current--; renderTestRunner(); }});
+  $("#nextQ").addEventListener("click", () => { if (testState.current<total-1){ testState.current++; renderTestRunner(); }});
+  $("#submitTest").addEventListener("click", () => {
+    openConfirm("Submit the test now? You have answered " + Object.keys(testState.answers).length + " of " + total + " questions.", submitTest);
+  });
+
+  attachTestHandlers(q);
+  startTestTimer();
+}
+
+function renderTestQuestion(q) {
+  let inputHTML = "";
+  if (q.type === "mcq" || q.type === "choose" || q.type === "error") {
+    const opts = q.type === "mcq" ? shuffle(q.options) : q.options;
+    inputHTML = `
+      <div class="space-y-2 mt-3" role="radiogroup">
+        ${opts.map((opt,i) => {
+          const selected = testState.answers[q.id] === opt;
+          return `<button type="button" class="option-btn w-full text-left border ${selected?"option-selected":"border-slate-200"} rounded-xl px-4 py-3 text-sm focus-ring" data-test-option="${escapeHtml(opt)}" data-qid="${q.id}">
+            <span class="font-semibold text-slate-400 mr-2">${String.fromCharCode(65+i)}.</span>${escapeHtml(opt)}
+          </button>`;
+        }).join("")}
+      </div>`;
+  } else if (q.type === "fill") {
+    inputHTML = `
+      <div class="mt-3">
+        <input id="test-fib-${q.id}" type="text" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm focus-ring" placeholder="Type your answer" value="${escapeHtml(testState.answers[q.id]||"")}" data-test-fib="${q.id}" />
+      </div>`;
+  } else {
+    inputHTML = `
+      <div class="mt-3">
+        <textarea id="test-open-${q.id}" rows="2" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm focus-ring" placeholder="Write your answer" data-test-open="${q.id}">${escapeHtml(testState.answers[q.id]||"")}</textarea>
+      </div>`;
+  }
+  return `
+    <div class="card p-5" data-question="${q.id}">
+      <div class="flex items-center gap-2 mb-2 flex-wrap">
+        <span class="badge badge-module">${q.module}</span>
+        <span class="badge ${q.level==="B1"?"badge-b1":"badge-b2"}">${q.level}</span>
+      </div>
+      <p class="text-base font-medium">${escapeHtml(q.question)}</p>
+      ${inputHTML}
+    </div>
+  `;
+}
+
+function attachTestHandlers(q) {
+  const area = $("#testQuestionArea");
+  area.querySelectorAll("[data-test-option]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      testState.answers[q.id] = btn.dataset.testOption;
+      renderTestRunner();
+    });
+  });
+  const fib = area.querySelector("[data-test-fib]");
+  if (fib) fib.addEventListener("input", () => { testState.answers[q.id] = fib.value; });
+  const open = area.querySelector("[data-test-open]");
+  if (open) open.addEventListener("input", () => { testState.answers[q.id] = open.value; });
+}
+
+function startTestTimer() {
+  clearInterval(testTimerInterval);
+  const tick = () => {
+    if (!testState || testState.submitted) { clearInterval(testTimerInterval); return; }
+    const elapsed = Math.floor((Date.now() - testState.startTime) / 1000);
+    const remaining = Math.max(0, testState.duration - elapsed);
+    const m = String(Math.floor(remaining / 60)).padStart(2, "0");
+    const s = String(remaining % 60).padStart(2, "0");
+    const el = $("#testTimer");
+    if (el) el.textContent = `${m}:${s}`;
+    if (remaining <= 0) {
+      clearInterval(testTimerInterval);
+      submitTest(true);
+    }
+  };
+  tick();
+  testTimerInterval = setInterval(tick, 1000);
+}
+
+function submitTest(auto = false) {
+  if (!testState || testState.submitted) return;
+  testState.submitted = true;
+  clearInterval(testTimerInterval);
+
+  let correct = 0;
+  testState.questions.forEach(q => {
+    const userAns = testState.answers[q.id] || "";
+    const accepted = Array.isArray(q.answer) ? q.answer : [q.answer];
+    let isCorrect = false;
+    if (q.type === "mcq" || q.type === "choose" || q.type === "error") {
+      isCorrect = normalizeAnswer(userAns) === normalizeAnswer(q.answer);
+    } else if (q.type === "fill") {
+      isCorrect = accepted.some(a => normalizeAnswer(a) === normalizeAnswer(userAns));
+    } else {
+      isCorrect = accepted.some(a => normalizeAnswer(a) === normalizeAnswer(userAns));
+    }
+    if (isCorrect) correct++;
+    recordAttempt(q, userAns, isCorrect);
+  });
+
+  const score = Math.round((correct / testState.questions.length) * 100);
+  state.tests.push({
+    date: new Date().toISOString(),
+    score: score,
+    correct: correct,
+    total: testState.questions.length,
+    duration: Math.floor((Date.now() - testState.startTime) / 1000)
+  });
+  saveState();
+
+  renderTestResults(correct, testState.questions.length, score, auto);
+}
+
+function renderTestResults(correct, total, score, auto) {
+  $("#view").innerHTML = `
+    <div class="fade-in max-w-2xl mx-auto text-center">
+      <div class="card p-8">
+        <p class="text-sm text-slate-500">${auto?"Time expired — test submitted automatically.":"Test submitted."}</p>
+        <h2 class="text-3xl font-bold mt-2">${score}%</h2>
+        <p class="text-slate-600 mt-1">${correct} / ${total} correct</p>
+        <div class="progress-track mt-4 max-w-xs mx-auto"><div class="progress-fill" style="width:${score}%"></div></div>
+        <div class="flex flex-wrap gap-3 justify-center mt-6">
+          <button class="focus-ring px-5 py-2.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700" data-nav="dashboard">Dashboard</button>
+          <button class="focus-ring px-5 py-2.5 rounded-xl border border-slate-300 font-semibold hover:bg-slate-50" data-nav="mistakes">Review mistakes</button>
+          <button class="focus-ring px-5 py-2.5 rounded-xl border border-slate-300 font-semibold hover:bg-slate-50" data-nav="test">New test</button>
+        </div>
+      </div>
+    </div>
+  `;
+  $("#view").querySelectorAll("[data-nav]").forEach(b => b.addEventListener("click", () => navigate(b.dataset.nav)));
+}
+
+/* ============================ 12. MISTAKES REVIEW ============================ */
+function renderMistakes() {
+  const mistakes = Object.entries(state.mistakes);
+  $("#view").innerHTML = `
+    <div class="fade-in">
+      <h2 class="text-2xl font-bold mb-1">Mistakes Review</h2>
+      <p class="text-slate-500 text-sm mb-6">Review the questions you answered incorrectly and try them again.</p>
+      ${mistakes.length === 0 ? `
+        <div class="card p-8 text-center">
+          <p class="text-4xl mb-2" aria-hidden="true">🎉</p>
+          <p class="font-semibold">No mistakes recorded.</p>
+          <p class="text-sm text-slate-500 mt-1">Keep practising to maintain your accuracy.</p>
+        </div>
+      ` : `
+        <div class="space-y-4">
+          ${mistakes.map(([id, m]) => {
+            const q = QUESTIONS.find(x => x.id === id);
+            if (!q) return "";
+            return `
+              <div class="card p-4">
+                <div class="flex items-center gap-2 mb-2 flex-wrap">
+                  <span class="badge badge-module">${m.module}</span>
+                  <span class="badge ${m.level==="B1"?"badge-b1":"badge-b2"}">${m.level}</span>
+                </div>
+                <p class="text-sm font-medium">${escapeHtml(m.question)}</p>
+                <p class="text-sm mt-2 text-red-600">Your answer: <strong>${escapeHtml(m.userAnswer)}</strong></p>
+                <p class="text-sm text-green-700">Correct: <strong>${escapeHtml(m.correctAnswer)}</strong></p>
+                <p class="text-xs text-slate-500 mt-1">${escapeHtml(m.explanation)}</p>
+                <div class="flex gap-2 mt-3">
+                  <button class="focus-ring px-3 py-1.5 rounded-lg bg-brand-600 text-white text-xs font-semibold hover:bg-brand-700" data-retry="${id}">Retry</button>
+                  <button class="focus-ring px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-semibold hover:bg-slate-50" data-remove="${id}">Remove from review</button>
+                </div>
+              </div>
+            `;
+          }).join("")}
+        </div>
+      `}
+    </div>
+  `;
+
+  $("#view").querySelectorAll("[data-retry]").forEach(b => {
+    b.addEventListener("click", () => {
+      const q = QUESTIONS.find(x => x.id === b.dataset.retry);
+      if (q) startPractice({ count: 1, random: false, _single: q });
+    });
+  });
+  $("#view").querySelectorAll("[data-remove]").forEach(b => {
+    b.addEventListener("click", () => {
+      delete state.mistakes[b.dataset.remove];
+      saveState();
+      renderMistakes();
+    });
+  });
+}
+
+/* ============================ 13. PROGRESS ============================ */
+function renderProgress() {
+  const byModule = accuracyByModule();
+  const tests = state.tests.slice(-5).reverse();
+  $("#view").innerHTML = `
+    <div class="fade-in">
+      <h2 class="text-2xl font-bold mb-1">Progress</h2>
+      <p class="text-slate-500 text-sm mb-6">Your learning statistics, stored locally in your browser.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+        <div class="card p-5 text-center">
+          <p class="text-3xl font-bold text-brand-700">${accuracy()}%</p>
+          <p class="text-xs text-slate-500 mt-1">Overall accuracy</p>
+        </div>
+        <div class="card p-5 text-center">
+          <p class="text-3xl font-bold text-brand-700">${answeredCount()}</p>
+          <p class="text-xs text-slate-500 mt-1">Questions answered</p>
+        </div>
+        <div class="card p-5 text-center">
+          <p class="text-3xl font-bold text-brand-700">${state.tests.length}</p>
+          <p class="text-xs text-slate-500 mt-1">Tests completed</p>
+        </div>
+      </div>
+
+      <div class="card p-5 mb-6">
+        <h3 class="font-semibold mb-3">Accuracy by module</h3>
+        ${Object.keys(byModule).length === 0 ? `<p class="text-sm text-slate-400">No data yet.</p>` :
+          Object.entries(byModule).map(([mod,d]) => `
+            <div class="mb-3">
+              <div class="flex justify-between text-sm mb-1"><span>${mod}</span><span class="font-semibold">${d.pct}%</span></div>
+              <div class="progress-track"><div class="progress-fill" style="width:${d.pct}%"></div></div>
+            </div>
+          `).join("")}
+      </div>
+
+      <div class="card p-5">
+        <h3 class="font-semibold mb-3">Recent test scores</h3>
+        ${tests.length === 0 ? `<p class="text-sm text-slate-400">No tests yet.</p>` :
+          tests.map(t => `
+            <div class="flex justify-between items-center text-sm py-2 border-b border-slate-100 last:border-0">
+              <span class="text-slate-500">${new Date(t.date).toLocaleDateString()}</span>
+              <span class="font-semibold ${t.score>=70?"text-green-600":t.score>=40?"text-amber-600":"text-red-600"}">${t.score}%</span>
+              <span class="text-slate-400 text-xs">${t.correct}/${t.total}</span>
+            </div>
+          `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+/* ============================ 14. SETTINGS ============================ */
+function renderSettings() {
+  $("#view").innerHTML = `
+    <div class="fade-in max-w-2xl">
+      <h2 class="text-2xl font-bold mb-1">Settings</h2>
+      <p class="text-slate-500 text-sm mb-6">Preferences and data management.</p>
+
+      <div class="card p-5 mb-5">
+        <h3 class="font-semibold mb-4">Display</h3>
+        <label class="flex items-center justify-between py-2">
+          <span class="text-sm">Show Vietnamese explanations</span>
+          <input type="checkbox" id="prefVietnamese" class="w-5 h-5 accent-brand-600" ${state.prefs.showVietnamese?"checked":""}>
+        </label>
+        <label class="flex items-center justify-between py-2">
+          <span class="text-sm">Dark theme</span>
+          <input type="checkbox" id="prefDark" class="w-5 h-5 accent-brand-600" ${state.prefs.theme==="dark"?"checked":""}>
+        </label>
+        <label class="flex items-center justify-between py-2">
+          <span class="text-sm">Sound effects (disabled by default)</span>
+          <input type="checkbox" id="prefSound" class="w-5 h-5 accent-brand-600" ${state.prefs.sound?"checked":""}>
+        </label>
+      </div>
+
+      <div class="card p-5">
+        <h3 class="font-semibold mb-4">Data</h3>
+        <div class="flex flex-wrap gap-3">
+          <button id="exportData" class="focus-ring px-4 py-2 rounded-lg border border-slate-300 text-sm font-semibold hover:bg-slate-50">Export progress (JSON)</button>
+          <label class="focus-ring px-4 py-2 rounded-lg border border-slate-300 text-sm font-semibold hover:bg-slate-50 cursor-pointer">
+            Import progress
+            <input type="file" id="importData" accept="application/json" class="hidden">
+          </label>
+          <button id="resetData" class="focus-ring px-4 py-2 rounded-lg bg-red-600 text-white text-sm font-semibold hover:bg-red-700">Reset progress</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  $("#prefVietnamese").addEventListener("change", e => {
+    state.prefs.showVietnamese = e.target.checked; saveState();
+  });
+  $("#prefDark").addEventListener("change", e => {
+    state.prefs.theme = e.target.checked ? "dark" : "light"; saveState(); applyTheme();
+  });
+  $("#prefSound").addEventListener("change", e => {
+    state.prefs.sound = e.target.checked; saveState();
+  });
+
+  $("#exportData").addEventListener("click", exportProgress);
+  $("#importData").addEventListener("change", importProgress);
+  $("#resetData").addEventListener("click", () => {
+    openConfirm("Reset all progress? This cannot be undone.", () => {
+      state = defaultState();
+      saveState();
+      applyTheme();
+      showToast("Progress reset.");
+      navigate("dashboard");
+    });
+  });
+}
+
+function applyTheme() {
+  if (state.prefs.theme === "dark") document.documentElement.classList.add("dark");
+  else document.documentElement.classList.remove("dark");
+}
+
+function exportProgress() {
+  const data = JSON.stringify(state, null, 2);
+  const blob = new Blob([data], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "prepositions-progress.json";
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast("Progress exported.");
+}
+
+function importProgress(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const parsed = JSON.parse(reader.result);
+      if (typeof parsed !== "object" || parsed === null) throw new Error("Invalid data");
+      state = { ...defaultState(), ...parsed };
+      saveState();
+      applyTheme();
+      showToast("Progress imported successfully.");
+      navigate("dashboard");
+    } catch (err) {
+      showToast("Invalid file. Import failed.");
+    }
+  };
+  reader.readAsText(file);
+}
+
+/* ============================ 15. INIT ============================ */
+function init() {
+  applyTheme();
+  renderNav();
+  navigate("dashboard");
+}
+document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>
